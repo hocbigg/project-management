@@ -3,6 +3,11 @@
 <h3>Hocbigg - Project Management</h3>
 <p>
   Path to a free self-taught education in Project Management!
+<p>
+  <a href="https://github.com/hocbigg/project-management">
+    <img alt="Hocbigg" src="/images/view_on_github.svg"
+  ></a>
+</p>
 </p>
 </div>
 
@@ -48,17 +53,29 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
   - [Project Manager (PM) Network LinkedIn Group](https://www.linkedin.com/groups/37952/)
   - [Project Management Institute (PMI) LinkedIn Group](https://www.linkedin.com/groups/1824657/)
   - [PMO Global Alliance LinkedIn Group](https://www.linkedin.com/groups/3915051/)
-- You can also interact through [GitHub issues](/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
+- You can also interact through [GitHub issues](https://github.com/hocbigg/project-management/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
 
 # Curriculum
+
+- [Intro](#intro)
+- [Core](#core)
+    - [Foundations](#foundations)
+    - [Applications](#applications)
+- [Advanced](#advanced)
+    - [General Electives Choose 2–3](#general-electives-choose-23)
+    - [Agile and Lean Project Management](#agile-and-lean-project-management)
+    - [Traditional and Risk-Focused Project Management](#traditional-and-risk-focused-project-management)
+    - [Leadership and Human-Centric Project Management](#leadership-and-human-centric-project-management)
+    - [Industry-Specific Project Management](#industry-specific-project-management)
+- [Final Project](#final-project)
 
 ## Intro
 
 | Subject | Why study? | Book | Videos |
 | --- | --- | --- | --- |
-| Introduction to Project Management | To understand the role of projects in organizations, key terminology, and the project lifecycle, establishing a foundational mindset for managing temporary endeavors with constraints. | *A Guide to the Project Management Body of Knowledge (PMBOK Guide) - Seventh Edition* by Project Management Institute; free alt: [*Project Management – 2nd Edition* by Adrienne Watt](https://opentextbc.ca/projectmanagement/) | [Project Management Principles and Practices](https://www.coursera.org/specializations/project-management-principles-practices) |
-| Basic Communication and Teamwork | To develop essential soft skills for collaborating in project environments, including effective writing, speaking, and interpersonal dynamics. | *Making Things Happen: Mastering Project Management* by Scott Berkun; free alt: [*Project Management Skills for All Careers* by Project Management Institute](https://textbookequity.org/Textbooks/ProjectManagementforAllCareersEdition2.pdf) | [Communication in the 21st Century Workplace](https://www.coursera.org/learn/communication-in-the-workplace) |
-| Fundamentals of Planning and Scheduling | To learn basic tools for organizing tasks, timelines, and resources, forming the basis for all project execution. | *Fundamentals of Project Management* by Joseph Heagney | [Project Planning: Putting It All Together](https://www.coursera.org/learn/project-planning-google) |
+| Introduction to Project Management | To understand the role of projects in organizations, key terminology, and the project lifecycle, establishing a foundational mindset for managing temporary endeavors with constraints. | [*A Guide to the Project Management Body of Knowledge (PMBOK Guide) - Seventh Edition*](https://www.amazon.com/Guide-Project-Management-Knowledge-PMBOK/dp/1628256648) | [Project Management Principles and Practices](https://www.coursera.org/specializations/project-management) |
+| Basic Communication and Teamwork | To develop essential soft skills for collaborating in project environments, including effective writing, speaking, and interpersonal dynamics. | [*Making Things Happen: Mastering Project Management*](https://archive.org/details/makingthingshapp0000berk) | [Communication in the 21st Century Workplace](https://www.coursera.org/learn/communication-in-the-workplace) |
+| Fundamentals of Planning and Scheduling | To learn basic tools for organizing tasks, timelines, and resources, forming the basis for all project execution. | [*Fundamentals of Project Management*](https://archive.org/details/fundamentalsofpr0000heag_t2z3) | [Project Planning: Putting It All Together](https://www.coursera.org/learn/project-planning-google) |
 
 ## Core
 
@@ -66,20 +83,20 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
 
 | Subject | Why study? | Book | Videos |
 | --- | --- | --- | --- |
-| Project Initiation and Scope Management | To master defining project goals, stakeholders, and boundaries, preventing scope creep and ensuring alignment with objectives. | *A Guide to the Project Management Body of Knowledge (PMBOK Guide) - Seventh Edition* by Project Management Institute (focus on relevant chapters) | [Project Initiation: Starting a Successful Project](https://www.coursera.org/learn/project-initiation-google) |
-| Risk Management Fundamentals | To identify, assess, and mitigate uncertainties in projects, building resilience and proactive decision-making. | *The Standard for Risk Management in Portfolios, Programs, and Projects* by Project Management Institute | [Risk Management for Project Professionals](https://www.coursera.org/learn/risk-management-for-project-professionals) |
-| Cost and Resource Management | To learn budgeting, resource allocation, and financial controls, enabling efficient use of limited assets. | *Practice Standard for Project Estimating* by Project Management Institute | [Project Management Foundations: Budgets](https://www.linkedin.com/learning/project-management-foundations-budgets) |
-| Time Management and Scheduling Techniques | To apply advanced scheduling methods like Gantt charts and critical path, optimizing project timelines. | *Practice Standard for Scheduling* by Project Management Institute | [Project Management Foundations: Schedules](https://www.linkedin.com/learning/project-management-foundations-schedules) |
+| Project Initiation and Scope Management | To master defining project goals, stakeholders, and boundaries, preventing scope creep and ensuring alignment with objectives. | [*A Guide to the Project Management Body of Knowledge (PMBOK Guide) - Seventh Edition*](https://www.amazon.com/Guide-Project-Management-Knowledge-PMBOK/dp/1628256648) (focus on relevant chapters) | [Project Initiation: Starting a Successful Project](https://www.coursera.org/learn/project-initiation-google) |
+| Risk Management Fundamentals | To identify, assess, and mitigate uncertainties in projects, building resilience and proactive decision-making. | [*The Standard for Risk Management in Portfolios, Programs, and Projects*](https://www.amazon.com/Standard-Management-Portfolios-Programs-Projects/dp/1628257628) | [Managing Project Risks and Changes](https://www.coursera.org/learn/project-risk-management) |
+| Cost and Resource Management | To learn budgeting, resource allocation, and financial controls, enabling efficient use of limited assets. | [*Practice Standard for Project Estimating*](https://www.amazon.com/Practice-Standard-Project-Estimating-Second/dp/1628256427) | Covered in [Project Planning: Putting It All Together](https://www.coursera.org/learn/project-planning-google) |
+| Time Management and Scheduling Techniques | To apply advanced scheduling methods like Gantt charts and critical path, optimizing project timelines. | [*Practice Standard for Scheduling*](https://www.amazon.com/Practice-Standard-Scheduling-Management-Institute/dp/1628255617) | Covered in [Project Planning: Putting It All Together](https://www.coursera.org/learn/project-planning-google) |
 
 ### Applications
 
 | Subject | Why study? | Book | Videos |
 | --- | --- | --- | --- |
-| Quality Management in Projects | To ensure deliverables meet standards through processes like quality assurance and control, fostering excellence and customer satisfaction. | *Managing Project Quality* by Roel Grit; | [Quality Management in Projects](https://www.youtube.com/watch?v=5d16JwWwjKo) (part of CalSouthern series) |
-| Stakeholder and Communication Management | To handle expectations, engagement, and information flow among diverse parties, reducing conflicts and enhancing collaboration. | *Stakeholder Engagement in Projects* by Project Management Institute (PMBOK chapters) | [Managing Stakeholders](https://www.coursera.org/learn/managing-stakeholders) |
-| Procurement and Contract Management | To understand sourcing, vendor relations, and legal agreements, supporting external dependencies in projects. | *Project Procurement Management* by Project Management Institute (PMBOK section) | [Procurement Management](https://www.youtube.com/playlist?list=PLf6bUqkkw_JRuOET8JIijuYn8zPh6XjVV) (part of Wise Way Learning series) |
-| Project Execution and Monitoring | To integrate planning into action, including performance tracking and adjustments, bridging theory to real-world implementation. | *A Guide to the Project Management Body of Knowledge (PMBOK Guide) - Seventh Edition* by Project Management Institute | [Project Execution: Running the Project](https://www.coursera.org/learn/project-execution-google) |
-| Project Closure and Evaluation | To wrap up projects effectively, including lessons learned and handover, promoting continuous improvement. | *A Guide to the Project Management Body of Knowledge (PMBOK Guide) - Seventh Edition* by Project Management Institute | [Project Management Full Course](https://www.youtube.com/watch?v=uWPIsaYpY7U) (Simplilearn, focus on closure sections) |
+| Quality Management in Projects | To ensure deliverables meet standards through processes like quality assurance and control, fostering excellence and customer satisfaction. | [*Managing Project Quality*](https://www.amazon.com/Project-Management-Practical-Approach-5th/dp/9001792022) | Covered in [Project Execution: Running the Project](https://www.coursera.org/learn/project-execution-google) |
+| Stakeholder and Communication Management | To handle expectations, engagement, and information flow among diverse parties, reducing conflicts and enhancing collaboration. | [*Stakeholder Engagement in Projects*](https://www.amazon.com/Stakeholder-Engagement-Management-Practices-Portfolio/dp/1482230674) (PMBOK chapters) | [Managing Stakeholders](https://www.coursera.org/learn/stakeholder-management) |
+| Procurement and Contract Management | To understand sourcing, vendor relations, and legal agreements, supporting external dependencies in projects. | [*Project Procurement Management*](https://www.amazon.com/Project-Procurement-Management-Structured-Procurements/dp/1522937072) (PMBOK section) | [Contract Management and Procurement: An Introduction](https://www.futurelearn.com/courses/contract-management-and-procurement-an-introduction) |
+| Project Execution and Monitoring | To integrate planning into action, including performance tracking and adjustments, bridging theory to real-world implementation. | [*A Guide to the Project Management Body of Knowledge (PMBOK Guide) - Seventh Edition*](https://www.amazon.com/Guide-Project-Management-Knowledge-PMBOK/dp/1628256648) | [Project Execution: Running the Project](https://www.coursera.org/learn/project-execution-google) |
+| Project Closure and Evaluation | To wrap up projects effectively, including lessons learned and handover, promoting continuous improvement. | [*A Guide to the Project Management Body of Knowledge (PMBOK Guide) - Seventh Edition*](https://www.amazon.com/Guide-Project-Management-Knowledge-PMBOK/dp/1628256648) | Covered in [Project Execution: Running the Project](https://www.coursera.org/learn/project-execution-google) |
 
 ## Advanced
 
@@ -87,43 +104,43 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
 
 | Subject | Why study? | Book | Videos |
 | --- | --- | --- | --- |
-| Leadership and Team Dynamics in Projects | To cultivate skills in motivating teams, conflict resolution, and ethical leadership, enhancing human elements in project success. | *Drive: The Surprising Truth About What Motivates Us* by Daniel H. Pink | [Leadership and Team Dynamics](https://www.coursera.org/learn/leadership-and-team-dynamics) |
-| Change Management | To handle organizational transitions within projects, minimizing resistance and maximizing adoption. | *Leading Change* by John P. Kotter; free alt: | [Organizational Change and Culture for Project Managers](https://www.coursera.org/learn/organizational-change-and-culture-for-project-managers) |
-| Sustainability in Project Management | To integrate environmental, social, and economic considerations, preparing for responsible practices in modern projects. | *Green Project Management* by Richard Maltzman and David Shirley; free alt: | [Sustainable Project Management](https://www.coursera.org/learn/sustainable-project-management) |
-| Data Analytics for Projects | To use metrics and tools for informed decision-making, improving forecasting and performance analysis. | *Data Analytics for Business Professionals* by Project Management Institute; free alt: | [Data Analytics in Project Management](https://www.youtube.com/watch?v=2gmCr40uT4U) (PMBOK analytics sections) |
+| Leadership and Team Dynamics in Projects | To cultivate skills in motivating teams, conflict resolution, and ethical leadership, enhancing human elements in project success. | [*Drive: The Surprising Truth About What Motivates Us*](https://archive.org/details/drivesurprisingt0000pink_e7s2) | [Mastering Team Dynamics](https://www.coursera.org/learn/mastering-team-dynamics) |
+| Change Management | To handle organizational transitions within projects, minimizing resistance and maximizing adoption. | [*Leading Change*](https://www.amazon.com/Leading-Change-New-Preface-Author/dp/1422186431) | [Leading Transformation: Driving Organizational Change](https://www.coursera.org/learn/leading-transformation-driving-organizational-change) |
+| Sustainability in Project Management | To integrate environmental, social, and economic considerations, preparing for responsible practices in modern projects. | [*Green Project Management*](https://www.amazon.com/Green-Project-Management-Richard-Maltzman/dp/1439830010) | [Sustainable Construction Management](https://www.edx.org/course/sustainable-construction-management) |
+| Data Analytics for Projects | To use metrics and tools for informed decision-making, improving forecasting and performance analysis. | [*Data Analytics for Business Professionals*](https://www.amazon.com/PMI-Guide-Business-Analysis/dp/1628251980) | [Google Data Analytics](https://www.coursera.org/professional-certificates/google-data-analytics) |
 
 
 ### Agile and Lean Project Management
 
 | Subject | Why study? | Book | Videos |
 | --- | --- | --- | --- |
-| Agile Principles and Frameworks | To adopt iterative approaches like Scrum and Kanban, enabling flexibility and rapid response. | *Scrum: The Art of Doing Twice the Work in Half the Time* by Jeff Sutherland; free alt: | [Agile Project Management](https://www.coursera.org/learn/agile-project-management) |
-| Lean Project Management | To eliminate waste and optimize value streams, complementing agile for efficiency. | *The Lean Project Manager* by Chris Croft; free alt: | [Lean Project Management](https://www.youtube.com/watch?v=M8Hp5B_0Gyw) (part of channel recommendations) |
-| Scaling Agile in Organizations | To apply agile at enterprise levels, addressing coordination and governance challenges. | *Scaling Lean & Agile Development* by Craig Larman; free alt: | [Scaling Agile](https://www.coursera.org/learn/scaling-agile) |
+| Agile Principles and Frameworks | To adopt iterative approaches like Scrum and Kanban, enabling flexibility and rapid response. | [*Scrum: The Art of Doing Twice the Work in Half the Time*](https://www.amazon.com/Scrum-Doing-Twice-Work-Half/dp/038534645X) | [Agile Project Management](https://www.coursera.org/learn/agile-project-management) |
+| Lean Project Management | To eliminate waste and optimize value streams, complementing agile for efficiency. | [*The Lean Project Manager*](https://www.amazon.com/Project-Management-QuickStart-Guide-Simplified/dp/1636100589) | [Lean Production](https://www.edx.org/course/lean-production) |
+| Scaling Agile in Organizations | To apply agile at enterprise levels, addressing coordination and governance challenges. | [*Scaling Lean & Agile Development*](https://www.amazon.com/Scaling-Lean-Agile-Development-Organizational/dp/0321480961) | [Scaling Agile](https://www.coursera.org/learn/scaling-agile-sc) |
 
 ### Traditional and Risk-Focused Project Management
 
 | Subject | Why study? | Book | Videos |
 | --- | --- | --- | --- |
-| Waterfall Methodology and Best Practices | To master sequential processes for predictable projects, ensuring thorough planning. | *A Guide to the Project Management Body of Knowledge (PMBOK Guide) - Seventh Edition* by Project Management Institute | [Waterfall Project Management](https://www.youtube.com/watch?v=Z3usMyZ5eXA) |
-| Advanced Risk and Uncertainty Management | To use quantitative tools like Monte Carlo simulations for complex risks. | *Identifying, Assessing, and Managing Project Risk* by Tom Kendrick | [Advanced Risk Management](https://online.stanford.edu/courses/ms-e250a) (Stanford Engineering Risk Analysis) |
-| Portfolio and Program Management | To oversee multiple projects strategically, aligning with organizational goals. | *The Standard for Program Management – Fifth Edition* by Project Management Institute; free alt: | [Program Management](https://www.coursera.org/learn/program-management) |
+| Waterfall Methodology and Best Practices | To master sequential processes for predictable projects, ensuring thorough planning. | [*A Guide to the Project Management Body of Knowledge (PMBOK Guide) - Seventh Edition*](https://www.amazon.com/Guide-Project-Management-Knowledge-PMBOK/dp/1628256648) | [Project Management: The Basics for Success](https://www.coursera.org/learn/project-management-basics) |
+| Advanced Risk and Uncertainty Management | To use quantitative tools like Monte Carlo simulations for complex risks. | [*Identifying, Assessing, and Managing Project Risk*](https://www.amazon.com/Identifying-Managing-Project-Risk-Failure-Proofing/dp/0814413404) | [Strategic Risk Management](https://www.coursera.org/learn/strategic-risk-management) |
+| Portfolio and Program Management | To oversee multiple projects strategically, aligning with organizational goals. | [*The Standard for Program Management – Fifth Edition*](https://www.amazon.com/Standard-Program-Management-Fifth/dp/1628258144) | [Portfolio Management, Governance, & the PMO](https://www.coursera.org/learn/portfolio-management-governance-pmo) |
 
 ### Leadership and Human-Centric Project Management
 
 | Subject | Why study? | Book | Videos |
 | --- | --- | --- | --- |
-| Human Resource Management in Projects | To recruit, develop, and retain talent within project teams. | *Human Resource Management in Projects* by Project Management Institute (PMBOK section) | [Human Resources in Project Management](https://www.youtube.com/playlist?list=PLF1064CD7B0A98261) |
-| Ethical Issues in Project Management | To navigate moral dilemmas, compliance, and corporate responsibility. | *Ethics in Project Management* by Project Management Institute | [Ethics for Project Managers](https://www.pmi.org/learning/free-online-courses) (PMI free course) |
-| Negotiation and Conflict Resolution | To resolve disputes and secure agreements, vital for stakeholder interactions. | *Getting to Yes: Negotiating Agreement Without Giving In* by Roger Fisher and William Ury; free alt: | [Negotiation Mastery](https://online.stanford.edu/courses/csp-xbus259) (Stanford) |
+| Human Resource Management in Projects | To recruit, develop, and retain talent within project teams. | [*Human Resource Management in Projects*](https://www.amazon.com/Human-Resource-Management-Project-Oriented-Organization/dp/1933890363) (PMBOK section) | [Human Resource Management: HR for People Managers](https://www.coursera.org/specializations/human-resource-management) |
+| Ethical Issues in Project Management | To navigate moral dilemmas, compliance, and corporate responsibility. | [*Ethics in Project Management*](https://www.amazon.com/Ethics-Project-Management-Ralph-Kliem/dp/1439852618) | [Project Management Foundations: Ethics](https://www.linkedin.com/learning/project-management-foundations-ethics) |
+| Negotiation and Conflict Resolution | To resolve disputes and secure agreements, vital for stakeholder interactions. | [*Getting to Yes: Negotiating Agreement Without Giving In*](https://archive.org/details/gettingtoyesnego0000fish_p7x7) | [Successful Negotiation: Essential Strategies and Skills](https://www.coursera.org/learn/negotiation) |
 
 ### Industry-Specific Project Management
 
 | Subject | Why study? | Book | Videos |
 | --- | --- | --- | --- |
-| Sector-Specific Regulations and Standards | To comply with industry norms (e.g., HIPAA for healthcare, ISO for manufacturing). | *The PMI Guide to Business Analysis* by Project Management Institute | [Industry-Specific Project Management](https://www.pmi.org/learning/free-online-courses) (PMI sector courses) |
-| Technology Tools for Project Management | To leverage software like PM tools for automation and collaboration. | *Project Management Software Tools* by various (focus on PMBOK tools) | [Project Management Tools](https://www.coursera.org/learn/project-management-tools) |
-| Case Studies in Industry Projects | To analyze real-world applications, synthesizing knowledge across sectors. | *Project Management Case Studies* by Harold Kerzner | [Project Management Case Studies](https://www.youtube.com/watch?v=VgRylyZeQHQ) |
+| Sector-Specific Regulations and Standards | To comply with industry norms (e.g., HIPAA for healthcare, ISO for manufacturing). | [*The PMI Guide to Business Analysis*](https://www.amazon.com/PMI-Guide-Business-Analysis/dp/1628251980) |  |
+| Technology Tools for Project Management | To leverage software like PM tools for automation and collaboration. | [*Project Management Software Tools*](https://www.amazon.com/Project-Management-Tools-Techniques-Practicing/dp/1466515627) | [Project Management Tools](https://www.udemy.com/course/project-management-tools/) |
+| Case Studies in Industry Projects | To analyze real-world applications, synthesizing knowledge across sectors. | [*Project Management Case Studies*](https://www.amazon.com/Project-Management-Studies-Harold-Kerzner/dp/1119821991) |  |
 
 ## Final Project
 

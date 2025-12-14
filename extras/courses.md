@@ -26,7 +26,7 @@ Courses | Duration | Effort
 [ChatGPT for Project Management - Leveraging AI for Success (Coursera)](https://www.coursera.org/specializations/chatgpt-project-management) | 3 months | 3–5 hours/week
 [Project Management with Lean Six Sigma (edX)](https://www.edx.org/learn/project-management/georgia-institute-of-technology-project-management-with-lean-six-sigma) | 5 weeks | 6–8 hours/week
 
-# Online Learning - Great Courses
+## Online Learning - Great Courses
 
 Courses | Duration | Effort
 :-- | :--: | :--:
