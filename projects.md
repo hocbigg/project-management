@@ -1,71 +1,57 @@
 # Projects
 
-This page is a curated collection of well-written, step-by-step guides for learning Project Management through hands-on, project-based practice.
+A curated directory of step-by-step guides, structured templates, and hands-on walkthroughs for learning Project Management through the construction of authentic managerial artifacts.
 
-> _What I cannot create, I do not understand — Richard Feynman._
+> _What I cannot create, I do not understand. — Richard Feynman_
 
-These projects are meant to support learning throughout the curriculum, not only at the end.  
-By building, writing, creating, or reconstructing real artifacts in the field, learners develop practical understanding alongside theoretical study.
+Rather than treating project documentation as abstract theory, learners develop deep competence by drafting genuine project plans, calculating schedule baselines, modeling risks, and facilitating team rituals across the project life cycle.
 
-## Tutorials
+---
 
-- [project charter](#build-your-own-project-charter)
-- [project management plan](#write-your-own-project-management-plan)
-- [work breakdown structure](#create-your-own-work-breakdown-structure)
-- [project schedule](#build-your-own-project-schedule)
-- [resource allocation plan](#construct-your-own-resource-allocation-plan)
-- [cost baseline and budget](#develop-your-own-cost-baseline-and-budget)
-- [risk register](#create-your-own-risk-register)
-- [risk response plan](#design-your-own-risk-response-plan)
-- [stakeholder register and engagement plan](#build-your-own-stakeholder-register-and-engagement-plan)
-- [communication management plan](#write-your-own-communication-management-plan)
+## Project Initiation & Strategic Charters
 
-### Build your own project charter
+- [How to Write a Project Charter: Step-by-Step Guide with Template - Asana](https://asana.com/resources/project-charter)
+- [How to Write a Project Charter: Components, Walkthrough & Template - ProjectManager](https://www.projectmanager.com/blog/project-charter)
+- [How to Write a Comprehensive Project Management Plan in 6 Steps - Wrike](https://www.wrike.com/blog/how-to-write-a-project-plan-easy-steps)
+- [How to Create a One-Page Project Plan Template - BrightWork](https://www.brightwork.com/blog/project-management-101-one-page-plan-project-basics)
 
-- [Write a Project Charter: Example Guide [2025] - Asana](https://asana.com/resources/project-charter) (_Step-by-step guide with template_)
-- [How to Write a Project Charter: Examples & Template Included - ProjectManager](https://www.projectmanager.com/blog/project-charter) (_Detailed walkthrough with components_)
+## Scope Decomposition & Work Architecture
 
-### Write your own project management plan
+- [What Is a Work Breakdown Structure (WBS) and How to Build One - Atlassian](https://www.atlassian.com/work-management/project-management/work-breakdown-structure)
+- [How to Create a Work Breakdown Structure: Step-by-Step Tutorial - Lucidchart](https://www.lucidchart.com/blog/how-to-create-a-work-breakdown-structure-and-why-you-should)
 
-- [What is a project plan? How to write one in 6 steps (2025) - Wrike](https://www.wrike.com/blog/how-to-write-a-project-plan-easy-steps) (_6-step process with examples_)
-- [How to Create a Project Plan Template - Tips for Success - BrightWork.com](https://www.brightwork.com/blog/project-management-101-one-page-plan-project-basics) (_Step-by-step template guide_)
+## Project Scheduling & Critical Path Modeling
 
-### Create your own work breakdown structure
+- [Critical Path Method (CPM): Step-by-Step Scheduling Guide - Asana](https://asana.com/resources/critical-path-method)
+- [How to Build a CPM Schedule from Scratch: 7-Step Walkthrough - ProjectManager](https://www.projectmanager.com/blog/how-to-make-a-cpm-schedule-cpm-scheduling-basics)
 
-- [What is a Work Breakdown Structure? [+How to Make One] | The Workstream - Atlassian](https://www.atlassian.com/work-management/project-management/work-breakdown-structure) (_4-step creation process_)
-- [How to create a work breakdown structure and why you should - Lucidchart](https://www.lucidchart.com/blog/how-to-create-a-work-breakdown-structure-and-why-you-should) (_Practical steps with tips_)
+## Resource Allocation & Cost Baselines
 
-### Build your own project schedule
+- [Resource Allocation: 6-Step Process for a Flexible Project Plan - Float](https://www.float.com/resources/resource-allocation)
+- [9 Steps to Create a Comprehensive Resource Management Plan - GanttPRO](https://blog.ganttpro.com/en/resource-management-plan)
+- [How to Create a Project Cost Baseline for Budget Control - Galorath](https://galorath.com/project/baseline/cost)
+- [How to Build a Cost Management Plan: Step-by-Step Guide & Template - Ramp](https://ramp.com/blog/how-to-create-a-cost-management-plan)
 
-- [Use Critical Path Method (CPM) for Project Management [2025] - Asana](https://asana.com/resources/critical-path-method) (_Step-by-step CPM for scheduling_)
-- [How to make a CPM Schedule: CPM Scheduling Basics - ProjectManager](https://www.projectmanager.com/blog/how-to-make-a-cpm-schedule-cpm-scheduling-basics) (_7-step CPM schedule build_)
+## Risk Assessment & Contingency Management
 
-### Construct your own resource allocation plan
+- [How to Build a Project Risk Register with Examples - Asana](https://asana.com/resources/risk-register)
+- [What Is a Risk Register & How to Build One Step by Step - ProjectManager](https://www.projectmanager.com/blog/guide-using-risk-register)
+- [How to Create a Project Risk Response Plan - ProjectEngineer](https://www.projectengineer.net/how-to-create-a-risk-response-plan)
+- [Risk Response Strategies: Definitive Guide with Concrete Threat and Opportunity Models - IT PM School](https://itpmschool.com/risk-response-strategy)
 
-- [Resource Allocation: 6-Step Process for a Flexible Project Plan - Float](https://www.float.com/resources/resource-allocation) (_6-step allocation guide_)
-- [9 Steps to Create a Resource Management Plan - GanttPRO](https://blog.ganttpro.com/en/resource-management-plan) (_Detailed 9-step process_)
+## Stakeholder Engagement & Strategic Communication
 
-### Develop your own cost baseline and budget
+- [5 Steps to a Stakeholder Engagement Plan (Guide & Free Template) - Asana](https://asana.com/resources/stakeholder-engagement-plan-template)
+- [Stakeholder Engagement Plan Template and Walkthrough - ProjectManager](https://www.projectmanager.com/templates/stakeholder-engagement-plan-template)
+- [How to Write an Effective Project Communication Plan - Asana](https://asana.com/resources/communication-plan)
+- [Free Project Communication Plan Template & Execution Guide - Asana](https://asana.com/templates/communication-plan)
 
-- [Cost Baseline: How to Create One for Effective Project Control - Galorath](https://galorath.com/project/baseline/cost) — Provides structured multi-step process with WBS integration and time-phased budgeting.
-- [How to Make a Cost Management Plan: Guide & Template - Ramp](https://ramp.com/blog/how-to-create-a-cost-management-plan) — Step-by-step including resource identification, estimation, and baseline setting.
+## Agile Delivery & Adaptive Frameworks
 
-### Create your own risk register
+- [Sprint Planning Meeting: Practical Setup and Facilitation Guide - Atlassian](https://www.atlassian.com/agile/scrum/sprint-planning)
+- [What Is a Kanban Board & How to Set Up Visual Workflows - Atlassian](https://www.atlassian.com/agile/kanban/boards)
+- [Agile Retrospectives: Step-by-Step Facilitation Guide - Atlassian](https://www.atlassian.com/agile/scrum/retrospectives)
 
-- [Risk Register: A Project Manager's Guide with Examples [2025] - Asana](https://asana.com/resources/risk-register) — Guides creation with fields, examples, and mitigation steps for practical reconstruction.
-- [What Is a Risk Register & How to Create One - ProjectManager](https://www.projectmanager.com/blog/guide-using-risk-register) — Details identification, description, and logging process with team brainstorming.
+## Project Closure, Post-Mortems & Organizational Learning
 
-### Design your own risk response plan
-
-- [How to Create a Risk Response Plan - ProjectEngineer](https://www.projectengineer.net/how-to-create-a-risk-response-plan) — Outlines principles, strategies (avoid/mitigate/etc.), and register linkage for response development.
-- [Risk Response Strategies (Definitive Guide with Examples) - IT PM School](https://itpmschool.com/risk-response-strategy) — Demonstrates threat/opportunity strategies with concrete examples to model plans.
-
-### Build your own stakeholder register and engagement plan
-
-- [5 Steps to a Stakeholder Engagement Plan (Free Template) [2025] - Asana](https://asana.com/resources/stakeholder-engagement-plan-template) — Step-by-step identification, analysis, and strategy with template.
-- [Stakeholder Engagement Plan Template for Word (Free Download) - ProjectManager](https://www.projectmanager.com/templates/stakeholder-engagement-plan-template) — Guides register creation and engagement methodology.
-
-### Write your own communication management plan
-
-- [How to Write an Effective Communication Plan [2026] - Asana](https://asana.com/resources/communication-plan) — Details structure, channels, frequency, and stakeholder alignment with examples.
-- [Free Communication Plan Template [2026] - Asana](https://asana.com/templates/communication-plan) — Reusable outline for defining what, when, how to communicate.
+- [7 Steps to Formal Project Closure (Checklist Included) - ProjectManager](https://www.projectmanager.com/blog/project-closure-checklist)

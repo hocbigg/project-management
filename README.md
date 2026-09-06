@@ -74,62 +74,61 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
 
 | Subject | Resource |
 | --- | --- |
-| What Is a Project? + Project Management Principles | [PMI Kickoff – Project Management Fundamentals (free)](https://www.pmi.org/kickoff) + [PMBOK Guide – Seventh Edition overview (PMI member free PDF)](https://www.pmi.org/standards/pmbok) |
-| Project Roles, Constraints, Success Criteria & Lifecycle | [PMBOK Guide – Principles & Project Lifecycle](https://www.pmi.org/standards/pmbok) |
-| Introduction to Predictive, Agile, and Hybrid Approaches | [Google Project Management Certificate – Foundations (free to audit on Coursera)](https://www.coursera.org/professional-certificates/google-project-management) |
+| What Is a Project? & Project Management Principles | *Project Management: The Managerial Process* (Larson & Gray, Ch. 1) + [PMI Kickoff – Project Management Fundamentals](https://www.pmi.org/kickoff) + [Google Project Management: Foundations of Project Management](https://www.coursera.org/professional-certificates/google-project-management) |
+| Organizational Structures, Project Governance & Life Cycles | *Project Management: The Managerial Process* (Larson & Gray, Ch. 2–3) + [PMBOK Guide – Principles & Project Lifecycle](https://www.pmi.org/standards/pmbok) |
+| Predictive, Agile, and Hybrid Delivery Methodologies | *Project Management: The Managerial Process* (Larson & Gray, Ch. 15) + [Manifesto for Agile Software Development](https://agilemanifesto.org) |
 
 ## Project Initiation & Definition
 
 | Subject | Resource |
 | --- | --- |
-| Business Case, Project Selection & Charter | [PMBOK Guide – Project Initiation & Business Case](https://www.pmi.org/standards/pmbok) |
-| Stakeholder Identification & Analysis | [PMI Stakeholder Engagement Fundamentals](https://www.pmi.org/learning/library/stakeholder-management-plan-6090) |
-| Requirements & Scope Definition | [PMBOK Guide – Scope Management](https://www.pmi.org/standards/pmbok) |
+| Strategic Alignment, Business Case & Project Charter | *Project Management: The Managerial Process* (Larson & Gray, Ch. 2 & 4) + [Google Project Management – Project Initiation Modules](https://www.coursera.org/professional-certificates/google-project-management) |
+| Stakeholder Identification, Analysis & Engagement | *Project Management: A Managerial Approach* (Meredith, Mantel & Shafer, Ch. 3) + [PMI Stakeholder Engagement Fundamentals](https://www.pmi.org/learning/library/stakeholder-management-plan-6090) |
+| Requirements Engineering & Scope Definition | *Project Management: The Managerial Process* (Larson & Gray, Ch. 4) + [PMBOK Guide – Scope Management](https://www.pmi.org/standards/pmbok) |
 
 ## Project Planning & Baselines
 
 | Subject | Resource |
 | --- | --- |
-| Work Breakdown Structures (WBS) | [PMBOK Guide – Scope Baseline & WBS](https://www.pmi.org/standards/pmbok) + [Google Project Management – Planning module (free to audit)](https://www.coursera.org/professional-certificates/google-project-management) |
-| Scheduling & Critical Path Method | [PMBOK Guide – Schedule Management](https://www.pmi.org/standards/pmbok) |
-| Cost Estimation & Budgeting | [PMBOK Guide – Cost Management](https://www.pmi.org/standards/pmbok) |
-| Resource Planning | [PMBOK Guide – Resource Management](https://www.pmi.org/standards/pmbok) |
+| Work Breakdown Structures (WBS) & Work Packages | *Project Management: The Managerial Process* (Larson & Gray, Ch. 4) + [Google Project Management – Project Planning Modules](https://www.coursera.org/professional-certificates/google-project-management) |
+| Activity Sequencing, Critical Path Method (CPM) & Schedule Baselines | *Project Management: The Managerial Process* (Larson & Gray, Ch. 6) + [MIT OpenCourseWare: System Project Management (ESD.36)](https://ocw.mit.edu/courses/esd-36-system-project-management-fall-2012/) |
+| Cost Estimation, Budgeting & Cost Baselines | *Project Management: The Managerial Process* (Larson & Gray, Ch. 5) + *Project Management: A Managerial Approach* (Meredith, Mantel & Shafer, Ch. 7) |
+| Resource Allocation, Leveling & Constrained Scheduling | *Project Management: The Managerial Process* (Larson & Gray, Ch. 8) + [PMBOK Guide – Resource Management](https://www.pmi.org/standards/pmbok) |
 
 ## Risk, Quality, and Procurement
 
 | Subject | Resource |
 | --- | --- |
-| Risk Identification & Qualitative Analysis | [PMBOK Guide – Risk Management](https://www.pmi.org/standards/pmbok) |
-| Quality Planning & Management | [PMBOK Guide – Quality Management](https://www.pmi.org/standards/pmbok) |
-| Procurement Basics & Contract Types | [PMBOK Guide – Procurement Management](https://www.pmi.org/standards/pmbok) |
+| Project Risk Management (Identification, Assessment & Response Planning) | *Project Management: The Managerial Process* (Larson & Gray, Ch. 7) + [PMBOK Guide – Risk Management](https://www.pmi.org/standards/pmbok) |
+| Quality Planning, Assurance & Quality Control | *Project Management: A Managerial Approach* (Meredith, Mantel & Shafer, Ch. 8) + [PMBOK Guide – Quality Management](https://www.pmi.org/standards/pmbok) |
+| Procurement Planning, Contract Types & Vendor Management | *Project Management: The Managerial Process* (Larson & Gray, Ch. 12) + [PMBOK Guide – Procurement Management](https://www.pmi.org/standards/pmbok) |
 
 ## Execution, Monitoring & Control
 
 | Subject | Resource |
 | --- | --- |
-| Performance Measurement & Earned Value Basics | [PMBOK Guide – Monitoring & Controlling](https://www.pmi.org/standards/pmbok) |
-| Change Control Systems | [PMBOK Guide – Integrated Change Control](https://www.pmi.org/standards/pmbok) |
-| Reporting, Dashboards & Issue Management | [Google Project Management – Execution & Control modules (free to audit)](https://www.coursera.org/professional-certificates/google-project-management) |
+| Earned Value Management (EVM) & Performance Baselines | *Project Management: The Managerial Process* (Larson & Gray, Ch. 13) + [MIT OpenCourseWare: System Project Management (ESD.36)](https://ocw.mit.edu/courses/esd-36-system-project-management-fall-2012/) |
+| Integrated Change Control & Scope Management | *Project Management: The Managerial Process* (Larson & Gray, Ch. 13) + [PMBOK Guide – Integrated Change Control](https://www.pmi.org/standards/pmbok) |
+| Agile Execution & Delivery (Scrum Events, Kanban & Iterations) | [The Scrum Guide (Schwaber & Sutherland)](https://scrumguides.org/scrum-guide.html) + [Agile Project Management (Google / Coursera)](https://www.coursera.org/learn/agile-project-management) |
+| Project Reporting, Dashboards & Issue Tracking | *Project Management: The Managerial Process* (Larson & Gray, Ch. 13) + [Google Project Management – Execution and Control Modules](https://www.coursera.org/professional-certificates/google-project-management) |
 
 ## Project Closure & Organizational Learning
 
 | Subject | Resource |
 | --- | --- |
-| Formal Project Closure & Lessons Learned | [PMBOK Guide – Project Closure](https://www.pmi.org/standards/pmbok) |
-| Benefits Realization | [PMBOK Guide – Value Delivery & Outcomes](https://www.pmi.org/standards/pmbok) |
+| Administrative Closure, Handover & Formal Acceptance | *Project Management: The Managerial Process* (Larson & Gray, Ch. 14) + [PMBOK Guide – Project Closure](https://www.pmi.org/standards/pmbok) |
+| Post-Project Evaluation, Lessons Learned & Knowledge Management | *Project Management: The Managerial Process* (Larson & Gray, Ch. 14) + *Project Management: A Managerial Approach* (Meredith, Mantel & Shafer, Ch. 13) |
+| Benefits Realization & Value Tracking | *Project Management: The Managerial Process* (Larson & Gray, Ch. 14) + [PMBOK Guide – Value Delivery System](https://www.pmi.org/standards/pmbok) |
 
 ## Human & Communication Dimensions
 
 | Subject | Resource |
 | --- | --- |
-| Team Formation, Leadership & Motivation | [Google Project Management – Team Leadership module (free to audit)](https://www.coursera.org/professional-certificates/google-project-management) |
-| Communication Planning & Management | [PMI Communications Fundamentals](https://www.pmi.org/learning/library/effective-communication-better-project-management-6480) |
-| Conflict Resolution & Negotiation | [Getting to Yes](https://archive.org/details/gettingtoyesnego0000fish_z1w8) (Archive.org) |
-| Ethics & Professional Responsibility | [PMI Code of Ethics (free)](https://www.pmi.org/about/ethics/code) |
+| Team Dynamics, Leadership Styles & Team Motivation | *Project Management: The Managerial Process* (Larson & Gray, Ch. 10–11) + [Project Management: The Basics for Success (UC Irvine / Coursera)](https://www.coursera.org/learn/project-management-basics) |
+| Communication Planning, Channels & Stakeholder Reporting | *Project Management: A Managerial Approach* (Meredith, Mantel & Shafer, Ch. 6) + [PMI Effective Communication Standards](https://www.pmi.org/learning/library/effective-communication-better-project-management-6480) |
+| Conflict Management & Principled Negotiation | [Getting to Yes: Negotiating Agreement Without Giving In (Fisher, Ury & Patton)](https://archive.org/details/gettingtoyesnego0000fish_z1w8) + *Project Management: The Managerial Process* (Larson & Gray, Ch. 11) |
+| Ethics, Professional Conduct & Social Responsibility | [PMI Code of Ethics and Professional Conduct](https://www.pmi.org/about/ethics/code) |
 
 # Code of conduct
 
 [Hocbigg's code of conduct](https://github.com/hocbigg/code-of-conduct).
-
-
-

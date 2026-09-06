@@ -1,35 +1,27 @@
 # Great Courses
 
-This is a list of high-quality courses that, for one reason or another, didn't make it into the curriculum.
-The most common reasons are that the course isn't available often enough,
-or that there was an alternative that fit better into the curriculum.
+A curated directory of standout university lecture series, full-length OpenCourseWare offerings, and authoritative graduate-level MOOC specializations in Project Management.
 
-## Fundamentals and Certifications
+---
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[System Project Management (MIT OCW)](https://ocw.mit.edu/courses/esd-36-system-project-management-fall-2012/) | 14 weeks | 10–12 hours/week
-[Project Management (Stanford Online via edX)](https://www.edx.org/learn/project-management/stanford-university-project-management) | 6 weeks | 8–10 hours/week
-[Project Management Principles and Practices Specialization (Coursera)](https://www.coursera.org/specializations/project-management-principles-practices) | 4 months | 5 hours/week
+## University OpenCourseWare & Graduate Sequences
 
-## Agile and Advanced Methodologies
+- [System Project Management (MIT OpenCourseWare / Prof. Olivier de Weck, Dr. James Lyneis & Prof. Dan Braha)](https://ocw.mit.edu/courses/esd-36-system-project-management-fall-2012/)
+- [Project Management (MIT OpenCourseWare / Prof. Fred Moavenzadeh)](https://ocw.mit.edu/courses/1-040-project-management-spring-2009/)
+- [Project Management MicroMasters Program (edX / Rochester Institute of Technology)](https://www.edx.org/micromasters/ritx-project-management)
+- [Project Management Principles and Practices Specialization (Coursera / University of California, Irvine)](https://www.coursera.org/specializations/project-management-principles-practices)
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Agile Project Management (Coursera)](https://www.coursera.org/learn/agile-project-management) | 6 weeks | 4–6 hours/week
-[IBM Project Manager Professional Certificate (edX)](https://www.edx.org/professional-certificate/ibm-project-manager) | 3 months | 10 hours/week
+## Engineering, Infrastructure & Major Capital Projects
 
-## Emerging Topics
+- [Construction Management Specialization (Coursera / Columbia University / Prof. Ibrahim Odeh)](https://www.coursera.org/specializations/construction-project-management)
+- [Engineering Project Management Specialization (Coursera / Rice University / Tom Phalen & Kazimir Karwowski)](https://www.coursera.org/specializations/engineering-project-management)
+- [Project Management with Lean Six Sigma (edX / Georgia Institute of Technology)](https://www.edx.org/learn/project-management/georgia-institute-of-technology-project-management-with-lean-six-sigma)
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[ChatGPT for Project Management - Leveraging AI for Success (Coursera)](https://www.coursera.org/specializations/chatgpt-project-management) | 3 months | 3–5 hours/week
-[Project Management with Lean Six Sigma (edX)](https://www.edx.org/learn/project-management/georgia-institute-of-technology-project-management-with-lean-six-sigma) | 5 weeks | 6–8 hours/week
+## Agile Delivery, Adaptive Frameworks & Product Leadership
 
-## Online Learning - Great Courses
+- [Agile Project Management (Coursera / Google)](https://www.coursera.org/learn/agile-project-management)
+- [IBM Project Manager Professional Certificate (edX / IBM)](https://www.edx.org/professional-certificate/ibm-project-manager)
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) | 4 weeks | 2 hours/week
-[Mindshift](https://www.coursera.org/learn/mindshift) | 4 weeks | 2 hours/week
-[Powersearching with Google](https://www.edx.org/learn/google-power-searching/google-power-searching-with-google) | 3 weeks | 4-6 hours/week
+## Organizational Leadership, Strategic Execution & Decision-Making
+
+- [Fundamentals of Project Planning and Management (Coursera / University of Virginia Darden School of Business / Prof. Yael Grushka-Cockayne)](https://www.coursera.org/learn/uva-darden-project-management)
