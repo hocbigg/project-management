@@ -1,54 +1,89 @@
 # Advanced Topics
 
-- [Strategic Portfolio, Program & PMO Governance](#strategic-portfolio-program--pmo-governance): Advanced frameworks for aligning multi-project investments with enterprise strategy, governing capital allocation, and architecting high-impact PMOs.
-- [Megaprojects, Major Infrastructure & Complex Systems](#megaprojects-major-infrastructure--complex-systems): Theory and engineering of large-scale, high-uncertainty capital investments, systems dynamics, and public-private partnerships.
-- [Advanced Quantitative Risk, Schedule & Decision Analytics](#advanced-quantitative-risk-schedule--decision-analytics): Probabilistic modeling, Monte Carlo simulation, Critical Chain theory, and empirical reference class forecasting.
-- [Behavioral Project Management & Decision Science](#behavioral-project-management--decision-science): Cognitive biases, strategic misrepresentation, organizational politics, and decision-making under uncertainty in temporary organizations.
-- [Enterprise Agility, Scaled Frameworks & Value Streams](#enterprise-agility-scaled-frameworks--value-streams): Cross-team scaling models, flow metrics, Lean portfolio management, and high-uncertainty collaborative contracting.
+Learners who have mastered core project management are expected to select one or two specialization tracks aligned with their specific domain, career path, or technical interests—rather than attempting to complete all tracks sequentially.
 
----
+- [Strategic Portfolio, Program & PMO Governance](#strategic-portfolio-program-pmo-governance): Frameworks for multi-project investment alignment, benefits realization, capital allocation, and enterprise Project Management Office architectures.
+- [Megaprojects, Major Infrastructure & Complex Systems](#megaprojects-major-infrastructure-complex-systems): Systems engineering, dynamic rework feedback modeling, public-private partnerships, and governance of multi-billion-dollar capital assets.
+- [Advanced Quantitative Risk, Schedule & Decision Analytics](#advanced-quantitative-risk-schedule-decision-analytics): Probabilistic Monte Carlo schedule risk analysis, Critical Chain buffer sizing, Earned Schedule metrics, and empirical Reference Class Forecasting.
+- [Behavioral Project Management & Decision Science](#behavioral-project-management-decision-science): Cognitive heuristics, the planning fallacy, strategic misrepresentation, escalation of commitment, and organizational sociology in temporary enterprises.
+- [Enterprise Agility, Scaled Frameworks & Value Streams](#enterprise-agility-scaled-frameworks-value-streams): Large-scale agile transformations, flow predictability, cumulative flow analytics, DevOps deployment metrics, and collaborative agile contracting.
 
 ## Strategic Portfolio, Program & PMO Governance
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Enterprise Portfolio Selection & Capital Allocation | Explores mathematical scoring models, efficient frontier analysis, and capacity-constrained project selection to maximize strategic return across conflicting organizational priorities. | - *Portfolio Management for New Products* (Robert G. Cooper, Scott J. Edgett & Elko J. Kleinschmidt)<br>- [The Standard for Portfolio Management (PMI)](https://www.pmi.org/standards) |
-| Program Management & Cross-Project Synergies | Examines the coordination of interrelated projects to realize emergent business benefits that cannot be obtained from managing projects individually. | - *The Standard for Program Management* (Project Management Institute)<br>- "Program Management: Organizing Project-Based Change" (C. Pellegrinelli, *International Journal of Project Management*) |
-| PMO Design, Typologies & Organizational Maturity | Investigates structural archetypes of Project Management Offices (supportive, controlling, directive, enterprise) and their role in knowledge transfer and organizational transformation. | - *The Oxford Handbook of Project Management* (Morris, Pinto & Söderlund, Oxford University Press)<br>- "A New Framework for Understanding Organisational Project Management Through the PMO" (M. Aubry, B. Hobbs & D. Thuillier) |
-| Project Governance & Value Realization Frameworks | Analyzes accountability structures, stage-gate review boards, and benefits realization monitoring between corporate boards, executive sponsors, and delivery teams. | - *Project Governance: Getting the Strategy and Structure Right* (Ralf Müller)<br>- [Directing Change: A Guide to Governance of Project Management (APM)](https://www.apm.org.uk) |
+Covers the strategic orchestration of multi-project investments, benefits realization architectures, PMO design typologies, and corporate governance models.
+
+Enterprise Portfolio Selection & Capital Allocation: [Portfolio Management, Governance, & the PMO (University of Washington / edX)](https://www.edx.org/course/portfolio-management-governance-the-pmo) - A university-level course examining strategic alignment, capital allocation, and governance mechanisms across multi-project portfolios, available to audit for free.
+
+Enterprise Portfolio Selection & Capital Allocation: [The Standard for Portfolio Management (Project Management Institute)](https://books.google.com/books?isbn=9781628251975) - The authoritative professional standard establishing portfolio performance domains, capacity planning, and strategic investment criteria.
+
+Program Management & Cross-Project Synergies: [Introduction to Program Management (Coursera)](https://www.coursera.org/learn/introduction-to-program-management) - An applied course exploring multi-project dependencies, program lifecycles, and strategic benefits realization, freely accessible in audit mode.
+
+Program Management & Cross-Project Synergies: [The Standard for Program Management (Project Management Institute)](https://books.google.com/books?isbn=9781628251968) - The definitive standard detailing program governance boards, stakeholder architecture, and coordinated multi-project delivery.
+
+PMO Design, Typologies & Organizational Maturity: [The Project Management Office (PMO): A Quest for Understanding (Monique Aubry & Brian Hobbs)](https://books.google.com/books?isbn=9781933890975) - A seminal empirical investigation identifying structural PMO typologies, functional mandates, and historical organizational evolution patterns.
+
+Project Governance & Value Realization Frameworks: [Project Governance: Getting the Strategy and Structure Right (Ralf Müller)](https://books.google.com/books?isbn=9780566088667) - An advanced analysis of corporate governance of projects, steering committees, and principal-agent relationships between executive boards and project teams.
 
 ## Megaprojects, Major Infrastructure & Complex Systems
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| The Megaproject Paradox & Front-End Decision-Making | Investigates why multi-billion-dollar projects systematically suffer from cost overruns, benefit shortfalls, and scope erosion, along with institutional mechanisms to fix front-end lock-in. | - *Megaprojects and Risk: An Anatomy of Ambition* (Bent Flyvbjerg, Nils Bruzelius & Werner Rothengatter, Cambridge University Press)<br>- *The Oxford Handbook of Megaproject Management* (Bent Flyvbjerg, ed., Oxford University Press) |
-| System Dynamics Modeling & Rework Feedback Loops | Explores dynamic feedback models to simulate how undiscovered rework, ripple effects, schedule pressure, and burnout cause non-linear project failure. | - "System Dynamics Applied to Project Management: A Survey, Assessment, and Directions for Future Research" (J. M. Lyneis & D. N. Ford, *System Dynamics Review*)<br>- [MIT OpenCourseWare: System Project Management (ESD.36)](https://ocw.mit.edu/courses/esd-36-system-project-management-fall-2012/) |
-| Systems Engineering & Integration in Complex Deliveries | Analyzes interface management, requirements traceability, and verification/validation strategies across multidisciplinary engineering and construction programs. | - *Systems Engineering Handbook* (NASA SP-2016-6105)<br>- [NASA APPEL Knowledge Services Case Studies](https://appel.nasa.gov/case-studies/)<br>- *Reinventing Project Management: The Diamond Approach* (A. Shenhar & D. Dvir, Harvard Business Review Press) |
-| Public-Private Partnerships (PPPs) & Concession Contracts | Examines risk allocation, special purpose vehicles (SPVs), project finance structuring, and concession modeling for large-scale public infrastructure. | - *Public-Private Partnerships for Infrastructure: Principles of Policy and Finance* (E. R. Yescombe & Edward Farquharson, Elsevier) |
+Investigates systemic cost and schedule failure modes in massive capital projects, system dynamics modeling, systems engineering integration, and public-private infrastructure finance.
+
+The Megaproject Paradox & Front-End Decision-Making: [Major Engineering Project Performance (University of Leeds / Coursera)](https://www.coursera.org/learn/major-engineering-project-performance) - Explores why large-scale engineering megaprojects systematically experience delay and cost escalation, contrasting tactical project management with strategic lifecycle success, available in free audit mode.
+
+The Megaproject Paradox & Front-End Decision-Making: [Megaprojects and Risk: An Anatomy of Ambition (Bent Flyvbjerg, Nils Bruzelius & Werner Rothengatter)](https://archive.org/details/megaprojectsandr0000flyv) - The foundational monograph analyzing the "iron law of megaprojects" (over budget, over time, under benefits over and over again) and institutional mechanisms for public accountability, freely accessible on Internet Archive.
+
+System Dynamics Modeling & Rework Feedback Loops: [System Project Management (MIT OpenCourseWare)](https://ocw.mit.edu/courses/esd-36-system-project-management-fall-2012/) - A graduate-level MIT course covering dynamic modeling of undiscovered rework cycles, causal loop diagrams, knock-on effects, and discrete-event simulation in complex deliveries.
+
+Systems Engineering & Interface Integration: [NASA Systems Engineering Handbook (NASA SP-2016-6105)](https://ntrs.nasa.gov/citations/20170001761) - An open engineering standard detailing interface control, requirements traceability, and verification/validation processes throughout complex technical lifecycles.
+
+Systems Engineering & Interface Integration: [NASA APPEL Knowledge Services Case Studies (NASA APPEL)](https://appel.nasa.gov/case-studies/) - An open-access institutional archive of real-world aerospace mission retrospectives examining system integration breakdowns, interface management errors, and complex technical trades.
+
+Public-Private Partnerships (PPPs) & Project Finance: [Public-Private Partnerships for Infrastructure: Principles of Policy and Finance (E. R. Yescombe & Edward Farquharson)](https://books.google.com/books?isbn=9780081007662) - An authoritative guide on concession modeling, special purpose vehicles (SPVs), and equitable risk allocation between governments and private syndicates.
 
 ## Advanced Quantitative Risk, Schedule & Decision Analytics
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Probabilistic Schedule & Cost Risk Analysis (SRA/CRA) | Moves beyond deterministic critical paths to model activity duration and cost uncertainty using Monte Carlo simulations, Latin hypercube sampling, and sensitivity tornado diagrams. | - *Risk Analysis: A Quantitative Guide* (David Vose, Wiley)<br>- *Integrated Project Management and Control: First Come the Theory, then the Practice* (Mario Vanhoucke, Springer) |
-| Theory of Constraints & Critical Chain Project Management (CCPM) | Investigates resource-constrained scheduling, buffer management (project, feeding, and resource buffers), and the elimination of student syndrome and Parkinson's Law. | - *Critical Chain* (Eliyahu M. Goldratt, North River Press)<br>- *Critical Chain Project Management* (Lawrence P. Leach, Artech House) |
-| Earned Schedule Theory & Statistical Process Control | Bridges the mathematical failure of classic Earned Value Schedule Variance at project completion by translating earned value metrics into time-based performance indicators. | - *Earned Schedule: An Extension to Earned Value Management* (Walt Lipke)<br>- "Prediction of Project Outcome: The Application of Statistical Methods to Earned Value Management and Earned Schedule" (W. Lipke, O. Zwikael, K. Henderson & F. T. Anbari) |
-| Reference Class Forecasting (RCF) & Empirical Risk Distribution | Explores non-parametric statistical methods that replace subjective bottom-up estimates with empirical probability distributions of completed similar projects to remove optimism bias. | - "Curse and Fallacy in Projects: Why It Happens and How to Overcome It" (Bent Flyvbjerg)<br>- *How Big Things Get Done* (Bent Flyvbjerg & Dan Gardner, Crown Currency) |
+Focuses on probabilistic schedule and cost risk analysis, Critical Chain buffer calculations, time-based Earned Schedule algorithms, and empirical Reference Class Forecasting.
+
+Integrated Schedule Risk Analysis & Monte Carlo Simulation: [Integrated Project Management and Control: First Comes the Theory, Then the Practice (Mario Vanhoucke)](https://books.google.com/books?isbn=9783319043302) - A rigorous mathematical textbook connecting baseline scheduling, Schedule Risk Analysis (SRA), Latin hypercube Monte Carlo simulations, and dynamic project controls.
+
+Theory of Constraints & Critical Chain Project Management (CCPM): [Critical Chain (Eliyahu M. Goldratt)](https://books.google.com/books?isbn=9780884271536) - The foundational business novel that introduces the Theory of Constraints to project management, demonstrating how safety buffer sizing eliminates student syndrome and Parkinson's Law.
+
+Theory of Constraints & Critical Chain Project Management (CCPM): [Critical Chain Project Management (Lawrence P. Leach)](https://books.google.com/books?isbn=9781608077359) - A comprehensive technical reference providing mathematical formulas for feeding and project buffers, resolving resource contention, and managing multi-project portfolios.
+
+Earned Schedule Theory & Statistical Forecasting: [Earned Schedule Digital Archive (Walt Lipke)](https://www.earnedschedule.com/) - The official open repository featuring foundational papers, mathematical proofs, and calculation spreadsheets that overcome classical EVM schedule indicator failure at project completion.
+
+Earned Schedule Theory & Statistical Forecasting: [Earned Schedule: An Extension to Earned Value Management (Walt Lipke)](https://books.google.com/books?isbn=9781441460332) - The definitive monograph formulating time-based schedule variance SV(t), schedule performance index SPI(t), and statistical project completion forecasting.
+
+Empirical Reference Class Forecasting (RCF): [How Big Things Get Done (Bent Flyvbjerg & Dan Gardner)](https://books.google.com/books?isbn=9780593239513) - An empirically backed text explaining how to replace subjective bottom-up estimates with Reference Class Forecasting and power-law distribution models derived from over 16,000 real-world projects.
 
 ## Behavioral Project Management & Decision Science
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Cognitive Biases & The Planning Fallacy | Investigates how overconfidence, optimism bias, framing effects, and anchoring systematically compromise project estimation and executive approvals. | - "Delusions of Success: How Optimism Undermines Executives' Decisions" (Dan Lovallo & Daniel Kahneman, *Harvard Business Review*)<br>- *Thinking, Fast and Slow* (Daniel Kahneman, Farrar, Straus and Giroux) |
-| Strategic Misrepresentation & Principal-Agent Dynamics | Analyzes political dynamics, intentional misestimation, asymmetric information, and misaligned incentives between project sponsors, politicians, and contractors. | - "Design by Deception: The Politics of Megaproject Approval" (Bent Flyvbjerg, *Harvard International Review*)<br>- *The Oxford Handbook of Project Management* (Morris, Pinto & Söderlund, Oxford University Press) |
-| Escalation of Commitment & Project De-escalation | Studies the psychological and structural drivers that cause organizations to pour resources into failing initiatives, alongside intervention techniques for terminating sunk-cost traps. | - "The Escalation of Commitment to a Course of Action" (Barry M. Staw, *Academy of Management Review*)<br>- "A Cross-Cultural Study on Escalation of Commitment to Failing Projects" (Mark Keil et al., *MIS Quarterly*) |
-| Temporary Organizations & Relational Contracting | Analyzes projects through organizational sociology as temporary social systems characterized by time limits, institutional tensions, and trust-based relational governance. | - "A Theory of the Temporary Organization" (R. A. Lundin & A. Söderholm, *Scandinavian Journal of Management*)<br>- *Relational Contracting for Construction Excellence* (David Mosey, Spon Press) |
+Examines cognitive biases, strategic misrepresentation, escalation of commitment traps, and organizational sociology within temporary enterprise structures.
+
+Cognitive Biases & The Planning Fallacy: [Thinking, Fast and Slow (Daniel Kahneman)](https://books.google.com/books?isbn=9780374533557) - The definitive foundational work on System 1 intuition, System 2 deliberation, optimism bias, and the psychological mechanics of the planning fallacy.
+
+Cognitive Biases & The Planning Fallacy: [The Psychology of Decision Making (Coursera)](https://www.coursera.org/learn/the-psychology-of-decision-making) - An online course examining heuristic distortions, perceptual framing effects, and probability misjudgments in decision-making under uncertainty, accessible in free audit mode.
+
+Strategic Misrepresentation & Institutional Politics: [How Big Things Get Done with Prof Bent Flyvbjerg (Red Team Thinking / YouTube)](https://www.youtube.com/watch?v=yUEycqrCuIY) - An in-depth masterclass exploring intentional underestimation, asymmetric accountability, and political power bias in major project approvals.
+
+Strategic Misrepresentation & Institutional Politics: [The Oxford Handbook of Megaproject Management (Bent Flyvbjerg)](https://books.google.com/books?isbn=9780198732242) - Advanced academic research examining the political, financial, and ethical dynamics that cause sponsors and contractors to intentionally misrepresent project parameters.
+
+Escalation of Commitment & Project De-escalation: "The Escalation of Commitment to a Course of Action" (Barry M. Staw, Academy of Management Review, Vol. 6, No. 4, 1981) - The seminal theoretical paper demonstrating how ego-defense, self-justification, and personal responsibility compel managers to continue funding failing projects.
+
+Temporary Organizations & Relational Governance: "A Theory of the Temporary Organization" (Rolf A. Lundin & Anders Söderholm, Scandinavian Journal of Management, Vol. 11, No. 4, 1995) - The foundational paper reframing projects away from mechanical execution systems into temporary organizations defined by time, task, team, and transition.
+
+Temporary Organizations & Relational Governance: [The Oxford Handbook of Project Management (Peter W. G. Morris, Jeffrey K. Pinto & Jonas Söderlund)](https://books.google.com/books?isbn=9780199563142) - An authoritative academic handbook detailing organizational sociology, relational contracting, trust-based collaboration, and institutional boundaries in project settings.
 
 ## Enterprise Agility, Scaled Frameworks & Value Streams
 
-| Topic | Why Study | Resources |
-| --- | --- | --- |
-| Large-Scale Agile Frameworks (SAFe, LeSS & Spotify Model) | Explores patterns, release trains, synchronization mechanisms, and structural configurations for coordinating dozens of agile teams on large-scale product platforms. | - [Scaled Agile Framework (SAFe) Knowledge Base](https://scaledagileframework.com)<br>- [Large-Scale Scrum (LeSS) Framework Guide](https://less.works)<br>- *Large-Scale Scrum: More with LeSS* (Craig Larman & Bas Vodde, Addison-Wesley) |
-| Lean Flow Architecture & Value Stream Management | Investigates Little's Law, cumulative flow diagrams (CFDs), work-in-progress (WIP) constraints, and cycle time distribution optimization across enterprise delivery pipelines. | - *Actionable Agile Metrics for Predictability* (Daniel S. Vacanti)<br>- [Kanban Guide (KanbanGuides.org)](https://kanbanguides.org)<br>- *Lean Thinking: Banish Waste and Create Wealth in Your Corporation* (J. P. Womack & D. T. Jones) |
-| Continuous Delivery & Empirical Flow Metrics | Analyzes the quantitative intersection between agile delivery, automated deployments, change lead times, mean time to recovery (MTTR), and project performance. | - *Accelerate: The Science of Lean Software and DevOps* (Nicole Forsgren, Jez Humble & Gene Kim, IT Revolution Press)<br>- *Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation* (Jez Humble & David Farley) |
-| Agile Contracts & Collaborative Procurement | Covers target-cost incentive contracts, cost-reimbursable agile models, and legal structures designed for iterative discovery rather than fixed-scope penalties. | - *Agile Contracts: Creating and Managing Successful Projects with Scrum* (Andreas Opelt, Boris Gloger, Wolfgang Pfarl & Ralf Mittermayr, Wiley)<br>- [APM Guide to Contracts and Procurement](https://www.apm.org.uk) |
+Covers cross-team agile coordination at scale, cumulative flow metrics, empirical delivery performance, and collaborative procurement contracts.
+
+Large-Scale Agile Frameworks: [Scaled Agile Framework Knowledge Base (Scaled Agile)](https://scaledagileframework.com) - The official open documentation hub detailing Agile Release Trains (ARTs), continuous delivery pipelines, and Lean portfolio management across enterprise software delivery.
+
+Large-Scale Agile Frameworks: [Large-Scale Scrum: More with LeSS (Craig Larman & Bas Vodde)](https://books.google.com/books?isbn=9780321985712) - A comprehensive guide to scaling agility through organizational descaling, whole-product feature teams, and unified cross-team backlog refinement.
+
+Lean Flow Architecture & Value Stream Analytics: [Actionable Agile Metrics for Predictability: An Introduction (Daniel S. Vacanti)](https://books.google.com/books?isbn=9780986436338) - The canonical practitioner guide detailing Little's Law, Cumulative Flow Diagrams (CFDs), cycle time percentile distributions, and WIP constraints to achieve predictable flow.
+
+DevOps, Continuous Delivery & Empirical Flow Metrics: [Accelerate: The Science of Lean Software and DevOps (Nicole Forsgren, Jez Humble & Gene Kim)](https://books.google.com/books?isbn=9781942788331) - Rigorous empirical research establishing the relationship between high software delivery performance and the four core flow metrics: deployment frequency, lead time for changes, mean time to restore, and change fail rate.
+
+Agile Contracts & Collaborative Procurement: [Agile Contracts: Creating and Managing Successful Projects with Scrum (Andreas Opelt, Boris Gloger, Wolfgang Pfarl & Ralf Mittermayr)](https://books.google.com/books?isbn=9781118630945) - A specialized legal and commercial guide analyzing target-cost models, risk-sharing agreements, and contract clauses structured for empirical discovery rather than fixed-scope penalties.
