@@ -9,7 +9,7 @@ Project management is the discipline of turning strategic intent into reality un
 
 This curriculum provides a foundational, undergraduate-level education in project management for independent learners. It assumes no formal business background or prior management training. The material is designed around practical comprehension and applied workflows rather than academic research methodology or institutional memorization.
 
-## Navigating the Curriculum
+### Navigating the Curriculum
 
 The curriculum is structured around the socio-technical lifecycle of a project, moving progressively from concept to evaluation:
 
@@ -20,7 +20,7 @@ The curriculum is structured around the socio-technical lifecycle of a project, 
 
 Each subject offers a mix of learning resources, pairing comprehensive open-access textbooks and canonical reference volumes with free-to-audit online courses and university courseware. You do not need to consume every listed resource sequentially; choose the format (text-driven or video-guided) that best fits your learning style, using alternative texts to clarify complex topics such as network diagramming or earned value mathematics.
 
-## Beyond the Core
+### Beyond the Core
 
 This curriculum covers the foundational baseline that every project manager needs regardless of industry. Once you have established this base, you can expand your studies through the other resources in this series:
 
