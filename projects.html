@@ -1,111 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Projects</title>
-<link rel="stylesheet" href="/project-management/style.css">
-<meta name="description" content="">
+  <title>Projects</title>
+  <meta name="description" content="Projects curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/project-management/">
+  <link rel="canonical" href="https://hocbigg.github.io/project-management/projects.html">
+  <meta property="og:title" content="Projects">
+  <meta property="og:description" content="Projects curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/project-management/projects.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Projects">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/project-management/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/project-management/">Project-Management</a>
-<a href="/project-management/advanced_topics.html">Advanced Topics</a>
-<a href="/project-management/projects.html">Projects</a>
-<a href="/project-management/extras/courses.html">Extra Courses</a>
-<a href="/project-management/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/project-management/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/project-management/">Project Management</a></li>
+      <li><a href="/project-management/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/project-management/projects.html">Projects</a></li>
+      <li><a href="/project-management/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/project-management/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/project-management" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="projects">Projects</h1>
-<p>This page is a curated collection of well-written, step-by-step guides for learning Project Management through hands-on, project-based practice.</p>
 <blockquote>
-<p><em>What I cannot create, I do not understand — Richard Feynman.</em></p>
+<p>"What I cannot create, I do not understand." — Richard Feynman</p>
 </blockquote>
-<p>These projects are meant to support learning throughout the curriculum, not only at the end.<br />
-By building, writing, creating, or reconstructing real artifacts in the field, learners develop practical understanding alongside theoretical study.</p>
-<h2 id="tutorials">Tutorials</h2>
 <ul>
-<li><a href="#build-your-own-project-charter">project charter</a></li>
-<li><a href="#write-your-own-project-management-plan">project management plan</a></li>
-<li><a href="#create-your-own-work-breakdown-structure">work breakdown structure</a></li>
-<li><a href="#build-your-own-project-schedule">project schedule</a></li>
-<li><a href="#construct-your-own-resource-allocation-plan">resource allocation plan</a></li>
-<li><a href="#develop-your-own-cost-baseline-and-budget">cost baseline and budget</a></li>
-<li><a href="#create-your-own-risk-register">risk register</a></li>
-<li><a href="#design-your-own-risk-response-plan">risk response plan</a></li>
-<li><a href="#build-your-own-stakeholder-register-and-engagement-plan">stakeholder register and engagement plan</a></li>
-<li><a href="#write-your-own-communication-management-plan">communication management plan</a></li>
+<li><a href="#build-your-own-project-charters">Project Charters</a></li>
+<li><a href="#write-your-own-project-management-plans">Project Management Plans</a></li>
+<li><a href="#create-your-own-work-breakdown-structures">Work Breakdown Structures</a></li>
+<li><a href="#build-your-own-critical-path-schedules">Critical Path Schedules</a></li>
+<li><a href="#construct-your-own-resource-allocation-plans">Resource Allocation Plans</a></li>
+<li><a href="#develop-your-own-cost-baselines">Cost Baselines</a></li>
+<li><a href="#build-your-own-project-budgets">Project Budgets</a></li>
+<li><a href="#create-your-own-risk-registers">Risk Registers</a></li>
+<li><a href="#design-your-own-risk-response-plans">Risk Response Plans</a></li>
+<li><a href="#create-your-own-stakeholder-registers">Stakeholder Registers</a></li>
+<li><a href="#design-your-own-stakeholder-engagement-plans">Stakeholder Engagement Plans</a></li>
+<li><a href="#write-your-own-communication-management-plans">Communication Management Plans</a></li>
+<li><a href="#build-your-own-earned-value-tracking-models">Earned Value Tracking Models</a></li>
+<li><a href="#build-your-own-sprint-backlogs">Sprint Backlogs</a></li>
+<li><a href="#construct-your-own-burndown-charts">Burndown Charts</a></li>
+<li><a href="#conduct-your-own-project-post-mortems">Project Post-Mortems</a></li>
+<li><a href="#facilitate-your-own-sprint-retrospectives">Sprint Retrospectives</a></li>
 </ul>
-<h3 id="build-your-own-project-charter">Build your own project charter</h3>
+<h2 id="build-your-own-project-charters">Build your own project charters</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://asana.com/resources/project-charter">Write a Project Charter: Example Guide [2025] - Asana</a> (<em>Step-by-step guide with template</em>)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.projectmanager.com/blog/project-charter">How to Write a Project Charter: Examples &amp; Template Included - ProjectManager</a> (<em>Detailed walkthrough with components</em>)</li>
+<li><a href="https://asana.com/resources/project-charter" target="_blank" rel="noopener noreferrer">What Is a Project Charter? How to Write One + Template - Asana</a></li>
+<li><a href="https://www.projectmanager.com/blog/project-charter" target="_blank" rel="noopener noreferrer">How to Write a Project Charter: Examples &amp; Template Included - ProjectManager</a></li>
 </ul>
-<h3 id="write-your-own-project-management-plan">Write your own project management plan</h3>
+<h2 id="write-your-own-project-management-plans">Write your own project management plans</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.wrike.com/blog/how-to-write-a-project-plan-easy-steps">What is a project plan? How to write one in 6 steps (2025) - Wrike</a> (<em>6-step process with examples</em>)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.brightwork.com/blog/project-management-101-one-page-plan-project-basics">How to Create a Project Plan Template - Tips for Success - BrightWork.com</a> (<em>Step-by-step template guide</em>)</li>
+<li><a href="https://www.wrike.com/blog/how-to-write-a-project-plan-easy-steps" target="_blank" rel="noopener noreferrer">What is a Project Plan? How to Write One in 6 Steps - Wrike</a></li>
+<li><a href="https://www.brightwork.com/blog/project-management-101-one-page-plan-project-basics" target="_blank" rel="noopener noreferrer">Essentials of a Project Plan Template - BrightWork</a></li>
 </ul>
-<h3 id="create-your-own-work-breakdown-structure">Create your own work breakdown structure</h3>
+<h2 id="create-your-own-work-breakdown-structures">Create your own work breakdown structures</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.atlassian.com/work-management/project-management/work-breakdown-structure">What is a Work Breakdown Structure? [+How to Make One] | The Workstream - Atlassian</a> (<em>4-step creation process</em>)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.lucidchart.com/blog/how-to-create-a-work-breakdown-structure-and-why-you-should">How to create a work breakdown structure and why you should - Lucidchart</a> (<em>Practical steps with tips</em>)</li>
+<li><a href="https://www.atlassian.com/work-management/project-management/work-breakdown-structure" target="_blank" rel="noopener noreferrer">What is a Work Breakdown Structure (WBS)? - Atlassian</a></li>
+<li><a href="https://www.lucidchart.com/blog/how-to-create-a-work-breakdown-structure-and-why-you-should" target="_blank" rel="noopener noreferrer">How to Create a Work Breakdown Structure - Lucidchart</a></li>
 </ul>
-<h3 id="build-your-own-project-schedule">Build your own project schedule</h3>
+<h2 id="build-your-own-critical-path-schedules">Build your own critical path schedules</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://asana.com/resources/critical-path-method">Use Critical Path Method (CPM) for Project Management [2025] - Asana</a> (<em>Step-by-step CPM for scheduling</em>)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.projectmanager.com/blog/how-to-make-a-cpm-schedule-cpm-scheduling-basics">How to make a CPM Schedule: CPM Scheduling Basics - ProjectManager</a> (<em>7-step CPM schedule build</em>)</li>
+<li><a href="https://asana.com/resources/critical-path-method" target="_blank" rel="noopener noreferrer">Critical Path Method (CPM): Steps, Float, Examples - Asana</a></li>
+<li><a href="https://www.projectmanager.com/blog/how-to-make-a-cpm-schedule-cpm-scheduling-basics" target="_blank" rel="noopener noreferrer">How to Make a CPM Schedule: CPM Scheduling Basics - ProjectManager</a></li>
 </ul>
-<h3 id="construct-your-own-resource-allocation-plan">Construct your own resource allocation plan</h3>
+<h2 id="construct-your-own-resource-allocation-plans">Construct your own resource allocation plans</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.float.com/resources/resource-allocation">Resource Allocation: 6-Step Process for a Flexible Project Plan - Float</a> (<em>6-step allocation guide</em>)</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://blog.ganttpro.com/en/resource-management-plan">9 Steps to Create a Resource Management Plan - GanttPRO</a> (<em>Detailed 9-step process</em>)</li>
+<li><a href="https://www.float.com/resources/resource-allocation" target="_blank" rel="noopener noreferrer">Resource Allocation: 6-Step Process for a Flexible Project Plan - Float</a></li>
+<li><a href="https://blog.ganttpro.com/en/resource-management-plan" target="_blank" rel="noopener noreferrer">How to Prepare a Dynamic Resource Management Plan: Step-by-Step Guide - GanttPRO</a></li>
 </ul>
-<h3 id="develop-your-own-cost-baseline-and-budget">Develop your own cost baseline and budget</h3>
+<h2 id="develop-your-own-cost-baselines">Develop your own cost baselines</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://galorath.com/project/baseline/cost">Cost Baseline: How to Create One for Effective Project Control - Galorath</a> — Provides structured multi-step process with WBS integration and time-phased budgeting.</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://ramp.com/blog/how-to-create-a-cost-management-plan">How to Make a Cost Management Plan: Guide &amp; Template - Ramp</a> — Step-by-step including resource identification, estimation, and baseline setting.</li>
+<li><a href="https://galorath.com/project/baseline/cost" target="_blank" rel="noopener noreferrer">Cost Baseline: How to Create One for Effective Project Control - Galorath</a></li>
+<li><a href="https://ramp.com/blog/how-to-create-a-cost-management-plan" target="_blank" rel="noopener noreferrer">How to Make a Cost Management Plan: Guide &amp; Template - Ramp</a></li>
 </ul>
-<h3 id="create-your-own-risk-register">Create your own risk register</h3>
+<h2 id="build-your-own-project-budgets">Build your own project budgets</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://asana.com/resources/risk-register">Risk Register: A Project Manager's Guide with Examples [2025] - Asana</a> — Guides creation with fields, examples, and mitigation steps for practical reconstruction.</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.projectmanager.com/blog/guide-using-risk-register">What Is a Risk Register &amp; How to Create One - ProjectManager</a> — Details identification, description, and logging process with team brainstorming.</li>
+<li><a href="https://www.projectmanager.com/blog/how-to-make-a-project-budget" target="_blank" rel="noopener noreferrer">How to Make a Project Budget: Project Budgeting Basics - ProjectManager</a></li>
+<li><a href="https://www.projectmanager.com/blog/project-budget-tracking" target="_blank" rel="noopener noreferrer">Project Budget Tracking: A Step-by-Step Guide - ProjectManager</a></li>
 </ul>
-<h3 id="design-your-own-risk-response-plan">Design your own risk response plan</h3>
+<h2 id="create-your-own-risk-registers">Create your own risk registers</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.projectengineer.net/how-to-create-a-risk-response-plan">How to Create a Risk Response Plan - ProjectEngineer</a> — Outlines principles, strategies (avoid/mitigate/etc.), and register linkage for response development.</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://itpmschool.com/risk-response-strategy">Risk Response Strategies (Definitive Guide with Examples) - IT PM School</a> — Demonstrates threat/opportunity strategies with concrete examples to model plans.</li>
+<li><a href="https://asana.com/resources/risk-register" target="_blank" rel="noopener noreferrer">Risk Register: How to Create One (Template + Example) - Asana</a></li>
+<li><a href="https://www.projectmanager.com/blog/guide-using-risk-register" target="_blank" rel="noopener noreferrer">What Is a Risk Register &amp; How to Create One - ProjectManager</a></li>
 </ul>
-<h3 id="build-your-own-stakeholder-register-and-engagement-plan">Build your own stakeholder register and engagement plan</h3>
+<h2 id="design-your-own-risk-response-plans">Design your own risk response plans</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://asana.com/resources/stakeholder-engagement-plan-template">5 Steps to a Stakeholder Engagement Plan (Free Template) [2025] - Asana</a> — Step-by-step identification, analysis, and strategy with template.</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.projectmanager.com/templates/stakeholder-engagement-plan-template">Stakeholder Engagement Plan Template for Word (Free Download) - ProjectManager</a> — Guides register creation and engagement methodology.</li>
+<li><a href="https://www.projectengineer.net/how-to-create-a-risk-response-plan" target="_blank" rel="noopener noreferrer">How to Create a Risk Response Plan - ProjectEngineer</a></li>
+<li><a href="https://itpmschool.com/risk-response-strategy" target="_blank" rel="noopener noreferrer">Risk Response Strategies (Definitive Guide with Examples) - IT PM School</a></li>
 </ul>
-<h3 id="write-your-own-communication-management-plan">Write your own communication management plan</h3>
+<h2 id="create-your-own-stakeholder-registers">Create your own stakeholder registers</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://asana.com/resources/communication-plan">How to Write an Effective Communication Plan [2026] - Asana</a> — Details structure, channels, frequency, and stakeholder alignment with examples.</li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://asana.com/templates/communication-plan">Free Communication Plan Template [2026] - Asana</a> — Reusable outline for defining what, when, how to communicate.</li>
+<li><a href="https://www.projectmanager.com/blog/what-is-a-stakeholder-register" target="_blank" rel="noopener noreferrer">What Is a Stakeholder Register? - ProjectManager</a></li>
+<li><a href="https://www.projectmanager.com/templates/stakeholder-register-template" target="_blank" rel="noopener noreferrer">Free Stakeholder Register Template - ProjectManager</a></li>
 </ul>
-</article>
-</main>
+<h2 id="design-your-own-stakeholder-engagement-plans">Design your own stakeholder engagement plans</h2>
+<ul>
+<li><a href="https://asana.com/resources/stakeholder-engagement-plan-template" target="_blank" rel="noopener noreferrer">5 Steps to Create a Stakeholder Engagement Plan + Template - Asana</a></li>
+<li><a href="https://www.projectmanager.com/templates/stakeholder-engagement-plan-template" target="_blank" rel="noopener noreferrer">Stakeholder Engagement Plan Template - ProjectManager</a></li>
+</ul>
+<h2 id="write-your-own-communication-management-plans">Write your own communication management plans</h2>
+<ul>
+<li><a href="https://asana.com/resources/communication-plan" target="_blank" rel="noopener noreferrer">How to Write a Communication Plan: Examples + Template - Asana</a></li>
+<li><a href="https://asana.com/templates/communication-plan" target="_blank" rel="noopener noreferrer">Communication Plan Template: Steps, Types, and Tips - Asana</a></li>
+</ul>
+<h2 id="build-your-own-earned-value-tracking-models">Build your own earned value tracking models</h2>
+<ul>
+<li><a href="https://www.projectmanager.com/blog/earned-value-analysis" target="_blank" rel="noopener noreferrer">Earned Value Analysis in Project Management: A How-to Guide - ProjectManager</a></li>
+<li><a href="https://www.projectengineer.net/the-8-steps-to-earned-value-analysis/" target="_blank" rel="noopener noreferrer">The 8 Steps to Earned Value Analysis - ProjectEngineer</a></li>
+</ul>
+<h2 id="build-your-own-sprint-backlogs">Build your own sprint backlogs</h2>
+<ul>
+<li><a href="https://asana.com/resources/sprint-backlog" target="_blank" rel="noopener noreferrer">Sprint Backlog: Definition, Benefits &amp; How to Create - Asana</a></li>
+<li><a href="https://www.atlassian.com/agile/scrum/sprint-backlog" target="_blank" rel="noopener noreferrer">What Is a Sprint Backlog? Benefits &amp; How to Create One - Atlassian</a></li>
+</ul>
+<h2 id="construct-your-own-burndown-charts">Construct your own burndown charts</h2>
+<ul>
+<li><a href="https://www.atlassian.com/agile/tutorials/burndown-charts" target="_blank" rel="noopener noreferrer">Agile Burndown Chart Tutorial: How to Create &amp; Use - Atlassian</a></li>
+<li><a href="https://www.projectmanager.com/blog/burndown-chart" target="_blank" rel="noopener noreferrer">Burndown Chart: What Is It, Examples &amp; How to Use One for Agile - ProjectManager</a></li>
+<li><a href="https://www.projectmanager.com/templates/burndown-chart-template" target="_blank" rel="noopener noreferrer">Burndown Chart Template for Excel (Free Download) - ProjectManager</a></li>
+</ul>
+<h2 id="conduct-your-own-project-post-mortems">Conduct your own project post-mortems</h2>
+<ul>
+<li><a href="https://asana.com/resources/project-post-mortem-tips" target="_blank" rel="noopener noreferrer">Project Post Mortem Tips: 6 Steps for Better Meetings - Asana</a></li>
+<li><a href="https://www.atlassian.com/incident-management/postmortem/templates" target="_blank" rel="noopener noreferrer">A Guide to the Incident Postmortem Process - Atlassian</a></li>
+</ul>
+<h2 id="facilitate-your-own-sprint-retrospectives">Facilitate your own sprint retrospectives</h2>
+<ul>
+<li><a href="https://www.atlassian.com/agile/scrum/retrospectives" target="_blank" rel="noopener noreferrer">What are Agile Retrospectives? - Atlassian</a></li>
+<li><a href="https://asana.com/resources/sprint-retrospective" target="_blank" rel="noopener noreferrer">Sprint Retrospective: How to Run an Effective Retro - Asana</a></li>
+</ul>
+    </article>
+  </main>
 
 </body>
 </html>

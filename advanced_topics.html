@@ -1,126 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Advanced Topics</title>
-<link rel="stylesheet" href="/project-management/style.css">
-<meta name="description" content="">
+  <title>Advanced Topics</title>
+  <meta name="description" content="Advanced Topics curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/project-management/">
+  <link rel="canonical" href="https://hocbigg.github.io/project-management/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics">
+  <meta property="og:description" content="Advanced Topics curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/project-management/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Advanced Topics">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/project-management/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/project-management/">Project-Management</a>
-<a href="/project-management/advanced_topics.html">Advanced Topics</a>
-<a href="/project-management/projects.html">Projects</a>
-<a href="/project-management/extras/courses.html">Extra Courses</a>
-<a href="/project-management/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/project-management/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/project-management/">Project Management</a></li>
+      <li><a href="/project-management/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/project-management/projects.html">Projects</a></li>
+      <li><a href="/project-management/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/project-management/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/project-management" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="advanced-topics">Advanced Topics</h1>
+<p>Learners who have mastered core project management are expected to select one or two specialization tracks aligned with their specific domain, career path, or technical interests—rather than attempting to complete all tracks sequentially.</p>
 <ul>
-<li><a href="#project-management-methodologies-comparative">Project Management Methodologies Comparative</a></li>
-<li><a href="#governance-programs--portfolios">Governance, Programs &amp; Portfolios</a></li>
-<li><a href="#advanced--contextual-topics-electives">Advanced &amp; Contextual Topics Electives</a></li>
+<li><a href="#strategic-portfolio-program-pmo-governance">Strategic Portfolio, Program &amp; PMO Governance</a>: Frameworks for multi-project investment alignment, benefits realization, capital allocation, and enterprise Project Management Office architectures.</li>
+<li><a href="#megaprojects-major-infrastructure-complex-systems">Megaprojects, Major Infrastructure &amp; Complex Systems</a>: Systems engineering, dynamic rework feedback modeling, public-private partnerships, and governance of multi-billion-dollar capital assets.</li>
+<li><a href="#advanced-quantitative-risk-schedule-decision-analytics">Advanced Quantitative Risk, Schedule &amp; Decision Analytics</a>: Probabilistic Monte Carlo schedule risk analysis, Critical Chain buffer sizing, Earned Schedule metrics, and empirical Reference Class Forecasting.</li>
+<li><a href="#behavioral-project-management-decision-science">Behavioral Project Management &amp; Decision Science</a>: Cognitive heuristics, the planning fallacy, strategic misrepresentation, escalation of commitment, and organizational sociology in temporary enterprises.</li>
+<li><a href="#enterprise-agility-scaled-frameworks-value-streams">Enterprise Agility, Scaled Frameworks &amp; Value Streams</a>: Large-scale agile transformations, flow predictability, cumulative flow analytics, DevOps deployment metrics, and collaborative agile contracting.</li>
 </ul>
-<p>After completing the Core, you can choose one or more of the following three sections depending on your goals:</p>
-<ul>
-<li>Project Management Methodologies (Comparative): Choose this if you want to understand different ways projects can be managed (traditional, agile, hybrid, etc.) and when to use each.</li>
-<li>Governance, Programs &amp; Portfolios: Choose this if you are interested in how multiple projects are coordinated at the organizational level, or if you aim for roles in program management, portfolio management, or PMO leadership.</li>
-<li>Advanced &amp; Contextual Topics (Electives): Choose this if you want exposure to modern trends (sustainability, data-driven project management) or real-world industry examples.</li>
-</ul>
-<h2 id="project-management-methodologies-comparative">Project Management Methodologies (Comparative)</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Traditional / Predictive (Waterfall)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.apm.org.uk/body-of-knowledge/delivery/life-cycles/">APM BoK – Predictive Methods</a></td>
-</tr>
-<tr>
-<td>Agile Principles &amp; Scrum</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://scrumguides.org/download.html">The Scrum Guide (official PDF)</a></td>
-</tr>
-<tr>
-<td>Kanban &amp; Lean</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://kanbanguides.org/">Kanban Guide (official, free)</a></td>
-</tr>
-<tr>
-<td>Hybrid Approaches</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/blog/project-management-embraces-the-fit-for-purpose-approach">PMI Hybrid PM Overview</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="governance-programs-portfolios">Governance, Programs &amp; Portfolios</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Project Governance Models</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.apm.org.uk/book-shop/directing-change-a-guide-to-governance-of-project-management-3rd-edition/">APM Governance of Project Management</a></td>
-</tr>
-<tr>
-<td>PMOs &amp; Organizational Maturity</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.apm.org.uk/resources/find-a-resource/maturity-models/">APM Maturity Models</a></td>
-</tr>
-<tr>
-<td>Program &amp; Portfolio Management</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/pmbok-guide-standards/framework">PMI Free Program/Portfolio Overviews</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="advanced-contextual-topics-electives">Advanced &amp; Contextual Topics (Electives)</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Sustainability in Projects</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://sdgintegration.undp.org/">UN SDGs &amp; Project Integration (UNDP PDFs)</a></td>
-</tr>
-<tr>
-<td>Data &amp; Metrics for PM</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/learning/library/analyzing-future-data-science-change-project-management-11491">PMI Data Analytics for PM (free articles)</a></td>
-</tr>
-<tr>
-<td>Industry Case Studies</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://appel.nasa.gov/case-studies/">NASA Project Case Archives</a></td>
-</tr>
-</tbody>
-</table>
-</article>
-</main>
+<h2 id="strategic-portfolio-program-pmo-governance">Strategic Portfolio, Program &amp; PMO Governance</h2>
+<p>Covers the strategic orchestration of multi-project investments, benefits realization architectures, PMO design typologies, and corporate governance models.</p>
+<p>Enterprise Portfolio Selection &amp; Capital Allocation: <a href="https://www.edx.org/course/portfolio-management-governance-the-pmo" target="_blank" rel="noopener noreferrer">Portfolio Management, Governance, &amp; the PMO (University of Washington / edX)</a> - A university-level course examining strategic alignment, capital allocation, and governance mechanisms across multi-project portfolios, available to audit for free.</p>
+<p>Enterprise Portfolio Selection &amp; Capital Allocation: <a href="https://books.google.com/books?isbn=9781628251975" target="_blank" rel="noopener noreferrer">The Standard for Portfolio Management (Project Management Institute)</a> - The authoritative professional standard establishing portfolio performance domains, capacity planning, and strategic investment criteria.</p>
+<p>Program Management &amp; Cross-Project Synergies: <a href="https://www.coursera.org/learn/introduction-to-program-management" target="_blank" rel="noopener noreferrer">Introduction to Program Management (Coursera)</a> - An applied course exploring multi-project dependencies, program lifecycles, and strategic benefits realization, freely accessible in audit mode.</p>
+<p>Program Management &amp; Cross-Project Synergies: <a href="https://books.google.com/books?isbn=9781628251968" target="_blank" rel="noopener noreferrer">The Standard for Program Management (Project Management Institute)</a> - The definitive standard detailing program governance boards, stakeholder architecture, and coordinated multi-project delivery.</p>
+<p>PMO Design, Typologies &amp; Organizational Maturity: <a href="https://books.google.com/books?isbn=9781933890975" target="_blank" rel="noopener noreferrer">The Project Management Office (PMO): A Quest for Understanding (Monique Aubry &amp; Brian Hobbs)</a> - A seminal empirical investigation identifying structural PMO typologies, functional mandates, and historical organizational evolution patterns.</p>
+<p>Project Governance &amp; Value Realization Frameworks: <a href="https://books.google.com/books?isbn=9780566088667" target="_blank" rel="noopener noreferrer">Project Governance: Getting the Strategy and Structure Right (Ralf Müller)</a> - An advanced analysis of corporate governance of projects, steering committees, and principal-agent relationships between executive boards and project teams.</p>
+<h2 id="megaprojects-major-infrastructure-complex-systems">Megaprojects, Major Infrastructure &amp; Complex Systems</h2>
+<p>Investigates systemic cost and schedule failure modes in massive capital projects, system dynamics modeling, systems engineering integration, and public-private infrastructure finance.</p>
+<p>The Megaproject Paradox &amp; Front-End Decision-Making: <a href="https://www.coursera.org/learn/major-engineering-project-performance" target="_blank" rel="noopener noreferrer">Major Engineering Project Performance (University of Leeds / Coursera)</a> - Explores why large-scale engineering megaprojects systematically experience delay and cost escalation, contrasting tactical project management with strategic lifecycle success, available in free audit mode.</p>
+<p>The Megaproject Paradox &amp; Front-End Decision-Making: <a href="https://archive.org/details/megaprojectsandr0000flyv" target="_blank" rel="noopener noreferrer">Megaprojects and Risk: An Anatomy of Ambition (Bent Flyvbjerg, Nils Bruzelius &amp; Werner Rothengatter)</a> - The foundational monograph analyzing the "iron law of megaprojects" (over budget, over time, under benefits over and over again) and institutional mechanisms for public accountability, freely accessible on Internet Archive.</p>
+<p>System Dynamics Modeling &amp; Rework Feedback Loops: <a href="https://ocw.mit.edu/courses/esd-36-system-project-management-fall-2012/" target="_blank" rel="noopener noreferrer">System Project Management (MIT OpenCourseWare)</a> - A graduate-level MIT course covering dynamic modeling of undiscovered rework cycles, causal loop diagrams, knock-on effects, and discrete-event simulation in complex deliveries.</p>
+<p>Systems Engineering &amp; Interface Integration: <a href="https://ntrs.nasa.gov/citations/20170001761" target="_blank" rel="noopener noreferrer">NASA Systems Engineering Handbook (NASA SP-2016-6105)</a> - An open engineering standard detailing interface control, requirements traceability, and verification/validation processes throughout complex technical lifecycles.</p>
+<p>Systems Engineering &amp; Interface Integration: <a href="https://appel.nasa.gov/case-studies/" target="_blank" rel="noopener noreferrer">NASA APPEL Knowledge Services Case Studies (NASA APPEL)</a> - An open-access institutional archive of real-world aerospace mission retrospectives examining system integration breakdowns, interface management errors, and complex technical trades.</p>
+<p>Public-Private Partnerships (PPPs) &amp; Project Finance: <a href="https://books.google.com/books?isbn=9780081007662" target="_blank" rel="noopener noreferrer">Public-Private Partnerships for Infrastructure: Principles of Policy and Finance (E. R. Yescombe &amp; Edward Farquharson)</a> - An authoritative guide on concession modeling, special purpose vehicles (SPVs), and equitable risk allocation between governments and private syndicates.</p>
+<h2 id="advanced-quantitative-risk-schedule-decision-analytics">Advanced Quantitative Risk, Schedule &amp; Decision Analytics</h2>
+<p>Focuses on probabilistic schedule and cost risk analysis, Critical Chain buffer calculations, time-based Earned Schedule algorithms, and empirical Reference Class Forecasting.</p>
+<p>Integrated Schedule Risk Analysis &amp; Monte Carlo Simulation: <a href="https://books.google.com/books?isbn=9783319043302" target="_blank" rel="noopener noreferrer">Integrated Project Management and Control: First Comes the Theory, Then the Practice (Mario Vanhoucke)</a> - A rigorous mathematical textbook connecting baseline scheduling, Schedule Risk Analysis (SRA), Latin hypercube Monte Carlo simulations, and dynamic project controls.</p>
+<p>Theory of Constraints &amp; Critical Chain Project Management (CCPM): <a href="https://books.google.com/books?isbn=9780884271536" target="_blank" rel="noopener noreferrer">Critical Chain (Eliyahu M. Goldratt)</a> - The foundational business novel that introduces the Theory of Constraints to project management, demonstrating how safety buffer sizing eliminates student syndrome and Parkinson's Law.</p>
+<p>Theory of Constraints &amp; Critical Chain Project Management (CCPM): <a href="https://books.google.com/books?isbn=9781608077359" target="_blank" rel="noopener noreferrer">Critical Chain Project Management (Lawrence P. Leach)</a> - A comprehensive technical reference providing mathematical formulas for feeding and project buffers, resolving resource contention, and managing multi-project portfolios.</p>
+<p>Earned Schedule Theory &amp; Statistical Forecasting: <a href="https://www.earnedschedule.com/" target="_blank" rel="noopener noreferrer">Earned Schedule Digital Archive (Walt Lipke)</a> - The official open repository featuring foundational papers, mathematical proofs, and calculation spreadsheets that overcome classical EVM schedule indicator failure at project completion.</p>
+<p>Earned Schedule Theory &amp; Statistical Forecasting: <a href="https://books.google.com/books?isbn=9781441460332" target="_blank" rel="noopener noreferrer">Earned Schedule: An Extension to Earned Value Management (Walt Lipke)</a> - The definitive monograph formulating time-based schedule variance SV(t), schedule performance index SPI(t), and statistical project completion forecasting.</p>
+<p>Empirical Reference Class Forecasting (RCF): <a href="https://books.google.com/books?isbn=9780593239513" target="_blank" rel="noopener noreferrer">How Big Things Get Done (Bent Flyvbjerg &amp; Dan Gardner)</a> - An empirically backed text explaining how to replace subjective bottom-up estimates with Reference Class Forecasting and power-law distribution models derived from over 16,000 real-world projects.</p>
+<h2 id="behavioral-project-management-decision-science">Behavioral Project Management &amp; Decision Science</h2>
+<p>Examines cognitive biases, strategic misrepresentation, escalation of commitment traps, and organizational sociology within temporary enterprise structures.</p>
+<p>Cognitive Biases &amp; The Planning Fallacy: <a href="https://books.google.com/books?isbn=9780374533557" target="_blank" rel="noopener noreferrer">Thinking, Fast and Slow (Daniel Kahneman)</a> - The definitive foundational work on System 1 intuition, System 2 deliberation, optimism bias, and the psychological mechanics of the planning fallacy.</p>
+<p>Cognitive Biases &amp; The Planning Fallacy: <a href="https://www.coursera.org/learn/the-psychology-of-decision-making" target="_blank" rel="noopener noreferrer">The Psychology of Decision Making (Coursera)</a> - An online course examining heuristic distortions, perceptual framing effects, and probability misjudgments in decision-making under uncertainty, accessible in free audit mode.</p>
+<p>Strategic Misrepresentation &amp; Institutional Politics: <a href="https://www.youtube.com/watch?v=yUEycqrCuIY" target="_blank" rel="noopener noreferrer">How Big Things Get Done with Prof Bent Flyvbjerg (Red Team Thinking / YouTube)</a> - An in-depth masterclass exploring intentional underestimation, asymmetric accountability, and political power bias in major project approvals.</p>
+<p>Strategic Misrepresentation &amp; Institutional Politics: <a href="https://books.google.com/books?isbn=9780198732242" target="_blank" rel="noopener noreferrer">The Oxford Handbook of Megaproject Management (Bent Flyvbjerg)</a> - Advanced academic research examining the political, financial, and ethical dynamics that cause sponsors and contractors to intentionally misrepresent project parameters.</p>
+<p>Escalation of Commitment &amp; Project De-escalation: "The Escalation of Commitment to a Course of Action" (Barry M. Staw, Academy of Management Review, Vol. 6, No. 4, 1981) - The seminal theoretical paper demonstrating how ego-defense, self-justification, and personal responsibility compel managers to continue funding failing projects.</p>
+<p>Temporary Organizations &amp; Relational Governance: "A Theory of the Temporary Organization" (Rolf A. Lundin &amp; Anders Söderholm, Scandinavian Journal of Management, Vol. 11, No. 4, 1995) - The foundational paper reframing projects away from mechanical execution systems into temporary organizations defined by time, task, team, and transition.</p>
+<p>Temporary Organizations &amp; Relational Governance: <a href="https://books.google.com/books?isbn=9780199563142" target="_blank" rel="noopener noreferrer">The Oxford Handbook of Project Management (Peter W. G. Morris, Jeffrey K. Pinto &amp; Jonas Söderlund)</a> - An authoritative academic handbook detailing organizational sociology, relational contracting, trust-based collaboration, and institutional boundaries in project settings.</p>
+<h2 id="enterprise-agility-scaled-frameworks-value-streams">Enterprise Agility, Scaled Frameworks &amp; Value Streams</h2>
+<p>Covers cross-team agile coordination at scale, cumulative flow metrics, empirical delivery performance, and collaborative procurement contracts.</p>
+<p>Large-Scale Agile Frameworks: <a href="https://scaledagileframework.com" target="_blank" rel="noopener noreferrer">Scaled Agile Framework Knowledge Base (Scaled Agile)</a> - The official open documentation hub detailing Agile Release Trains (ARTs), continuous delivery pipelines, and Lean portfolio management across enterprise software delivery.</p>
+<p>Large-Scale Agile Frameworks: <a href="https://books.google.com/books?isbn=9780321985712" target="_blank" rel="noopener noreferrer">Large-Scale Scrum: More with LeSS (Craig Larman &amp; Bas Vodde)</a> - A comprehensive guide to scaling agility through organizational descaling, whole-product feature teams, and unified cross-team backlog refinement.</p>
+<p>Lean Flow Architecture &amp; Value Stream Analytics: <a href="https://books.google.com/books?isbn=9780986436338" target="_blank" rel="noopener noreferrer">Actionable Agile Metrics for Predictability: An Introduction (Daniel S. Vacanti)</a> - The canonical practitioner guide detailing Little's Law, Cumulative Flow Diagrams (CFDs), cycle time percentile distributions, and WIP constraints to achieve predictable flow.</p>
+<p>DevOps, Continuous Delivery &amp; Empirical Flow Metrics: <a href="https://books.google.com/books?isbn=9781942788331" target="_blank" rel="noopener noreferrer">Accelerate: The Science of Lean Software and DevOps (Nicole Forsgren, Jez Humble &amp; Gene Kim)</a> - Rigorous empirical research establishing the relationship between high software delivery performance and the four core flow metrics: deployment frequency, lead time for changes, mean time to restore, and change fail rate.</p>
+<p>Agile Contracts &amp; Collaborative Procurement: <a href="https://books.google.com/books?isbn=9781118630945" target="_blank" rel="noopener noreferrer">Agile Contracts: Creating and Managing Successful Projects with Scrum (Andreas Opelt, Boris Gloger, Wolfgang Pfarl &amp; Ralf Mittermayr)</a> - A specialized legal and commercial guide analyzing target-cost models, risk-sharing agreements, and contract clauses structured for empirical discovery rather than fixed-scope penalties.</p>
+    </article>
+  </main>
 
 </body>
 </html>

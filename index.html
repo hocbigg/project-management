@@ -1,285 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Hocbigg - Project Management</title>
-<link rel="stylesheet" href="/project-management/style.css">
-<meta name="description" content="Path to a free self-taught education in Project Management!">
+  <title>Hocbigg - Project Management</title>
+  <meta name="description" content="Path to a free self-taught education in Project Management!">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/project-management/">
+  <link rel="canonical" href="https://hocbigg.github.io/project-management/">
+  <meta property="og:title" content="Hocbigg - Project Management">
+  <meta property="og:description" content="Path to a free self-taught education in Project Management!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/project-management/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Hocbigg - Project Management">
-<meta property="og:description" content="Path to a free self-taught education in Project Management!">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/project-management/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/project-management/">Project-Management</a>
-<a href="/project-management/advanced_topics.html">Advanced Topics</a>
-<a href="/project-management/projects.html">Projects</a>
-<a href="/project-management/extras/courses.html">Extra Courses</a>
-<a href="/project-management/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/project-management/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/project-management/">Project Management</a></li>
+      <li><a href="/project-management/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/project-management/projects.html">Projects</a></li>
+      <li><a href="/project-management/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/project-management/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/project-management" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
+  <main id="main-content">
+    <article>
 <header class="page-header">
-  <img src="/images/logo.png" alt="">
+  <img src="/images/logo.png" alt="Hocbigg logo">
   <h1>Hocbigg - Project Management</h1>
+  <p class="page-subtitle">Path to a free self-taught education in Project Management!</p>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-09-30">2026-09-30</time></small></p>
 </header>
-
-<h1 id="contents">Contents</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Project management is the discipline of turning strategic intent into reality under conditions of uncertainty and finite resources. While ongoing operations sustain an organization, projects drive change — delivering new products, infrastructure, software, and organizational transformations through temporary, goal-oriented endeavors. Mastering this field requires a balance between technical mechanics (defining scope, scheduling network paths, estimating costs, and tracking earned value) and organizational realities (aligning stakeholders, managing risk, negotiating trade-offs, and leading cross-functional teams).</p>
+<p>This curriculum provides a foundational, undergraduate-level education in project management for independent learners. It assumes no formal business background or prior management training. The material is designed around practical comprehension and applied workflows rather than academic research methodology or institutional memorization.</p>
+<h3 id="navigating-the-curriculum">Navigating the Curriculum</h3>
+<p>The curriculum is structured around the socio-technical lifecycle of a project, moving progressively from concept to evaluation:</p>
 <ul>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#communities">Communities</a></li>
-<li><a href="#curriculum">Curriculum</a></li>
-<li><a href="#code-of-conduct">Code of conduct</a></li>
+<li><strong>Foundations and Initiation:</strong> Begin with foundational lifecycle models and governance structures, followed by project initiation and scope definition. These sections teach you how to evaluate business cases, draft project charters, identify key stakeholders, and define clear boundaries to prevent scope creep.</li>
+<li><strong>Detailed Planning and Controls:</strong> Next, progress through baseline planning, resource leveling, and risk, quality, and procurement management. This phase covers quantitative and analytical methods, including Work Breakdown Structures (WBS), Critical Path Method (CPM) network scheduling, bottom-up cost estimation, and contingency planning.</li>
+<li><strong>Execution and Closeout:</strong> Move into execution, monitoring, and control, where you will learn to track project performance using Earned Value Management (EVM), administer integrated change control, and facilitate iterative workflows using Agile and Kanban frameworks. Conclude the operational cycle with project closure, focusing on contract closeout, asset handover, and post-project retrospectives.</li>
+<li><strong>The Human Dimension:</strong> While listed as a distinct subject, leadership, stakeholder communication, and principled negotiation underpin every phase of the project lifecycle. You can study this section concurrently with the technical subjects or treat it as an integrative capstone on interpersonal and political dynamics.</li>
 </ul>
-<h1 id="summary">Summary</h1>
-<p>The Project Management curriculum is a <strong>complete education in Project Management</strong> using online materials.</p>
-<h2 id="organization">Organization</h2>
-<p>This repository is organized into three main components:</p>
+<p>Each subject offers a mix of learning resources, pairing comprehensive open-access textbooks and canonical reference volumes with free-to-audit online courses and university courseware. You do not need to consume every listed resource sequentially; choose the format (text-driven or video-guided) that best fits your learning style, using alternative texts to clarify complex topics such as network diagramming or earned value mathematics.</p>
+<h3 id="beyond-the-core">Beyond the Core</h3>
+<p>This curriculum covers the foundational baseline that every project manager needs regardless of industry. Once you have established this base, you can expand your studies through the other resources in this series:</p>
 <ul>
-<li><strong>Core Curriculum</strong> (this page): the foundational knowledge of the field;</li>
-<li><strong><a href="advanced_topics.html">Advanced Topics</a></strong>: focused study in specific areas;</li>
-<li><strong><a href="projects.html">Projects</a></strong>: support learning through practical application throughout the curriculum.</li>
+<li>Explore advanced delivery models, megaprojects, portfolio governance, and behavioral decision science in <a href="advanced_topics.html">Advanced Topics</a>.</li>
+<li>Apply your theoretical knowledge by building authentic managerial artifacts — such as project charters, risk registers, and critical path schedules — using <a href="projects.html">Projects</a>.</li>
+<li>Engage with seminal essays, empirical studies, and foundational treatises that shaped the field in <a href="extras/readings.html">Readings</a>.</li>
+<li>Deepen your intuition through full-length university lectures and specialized MOOCs curated in <a href="extras/courses.html">Courses</a>.</li>
 </ul>
-<p><strong>Process:</strong> Learners may work through the curriculum independently or collaboratively, and either sequentially or selectively.</p>
+<h3 id="communities">Communities</h3>
 <ul>
-<li>For simplicity, courses in the Core Curriculum are ordered according to their prerequisites.</li>
-<li>The Core Curriculum provides a shared foundation and is intended to be completed in full.</li>
-<li>Advanced Topics are optional; learners are encouraged to select one area of focus and complete all courses within that topic.</li>
-</ul>
-<p>Practical work is integrated through the <a href="projects.html">Projects section</a> and may be undertaken alongside coursework.</p>
-<p>Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in <a href="extras/courses.html">extras/courses</a>, <a href="extras/readings.html">extras/readings</a>.</p>
-<p><strong><a href="/CONTRIBUTING.html">How to contribute</a></strong></p>
-<h1 id="communities">Communities</h1>
-<ul>
-<li>
-<p>Forums:</p>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.projectmanagement.com/">ProjectManagement.com</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://community.pmi.org/">PMI Community</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://worldofprojectmanagement.com/forums/">World of Project Management Forum</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.planningplanet.com/forums/">Planning Planet Forums</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.projectsmart.co.uk/forums/">Project Smart Forums</a></li>
+<li>Forums:<ul>
+<li><a href="https://www.projectmanagement.com/" target="_blank" rel="noopener noreferrer">ProjectManagement.com</a></li>
+<li><a href="https://community.pmi.org/" target="_blank" rel="noopener noreferrer">PMI Community</a></li>
+<li><a href="https://worldofprojectmanagement.com/forums/" target="_blank" rel="noopener noreferrer">World of Project Management Forum</a></li>
+<li><a href="https://www.planningplanet.com/forums/" target="_blank" rel="noopener noreferrer">Planning Planet Forums</a></li>
+<li><a href="https://www.projectsmart.co.uk/forums/" target="_blank" rel="noopener noreferrer">Project Smart Forums</a></li>
 </ul>
 </li>
-<li>
-<p>Subreddits:</p>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/projectmanagement/">r/projectmanagement</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/projectmanagers/">r/projectmanagers</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/PMCareers/">r/PMCareers</a></li>
+<li>Subreddits:<ul>
+<li><a href="https://www.reddit.com/r/projectmanagement/" target="_blank" rel="noopener noreferrer">r/projectmanagement</a></li>
+<li><a href="https://www.reddit.com/r/projectmanagers/" target="_blank" rel="noopener noreferrer">r/projectmanagers</a></li>
+<li><a href="https://www.reddit.com/r/PMCareers/" target="_blank" rel="noopener noreferrer">r/PMCareers</a></li>
 </ul>
 </li>
-<li>
-<p>Other / Slack / Mastodon / etc (if relevant):</p>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://thedigitalprojectmanager.com/membership/dpm-slack-community/">DPM Slack Community</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://asana.com/community">Asana Community Slack</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/groups/37952/">Project Manager (PM) Network LinkedIn Group</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/groups/1824657/">Project Management Institute (PMI) LinkedIn Group</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/groups/3915051/">PMO Global Alliance LinkedIn Group</a></li>
+<li>Other / Slack / Mastodon / etc (if relevant):<ul>
+<li><a href="https://thedigitalprojectmanager.com/membership/dpm-slack-community/" target="_blank" rel="noopener noreferrer">DPM Slack Community</a></li>
+<li><a href="https://asana.com/community" target="_blank" rel="noopener noreferrer">Asana Community Slack</a></li>
+<li><a href="https://www.linkedin.com/groups/37952/" target="_blank" rel="noopener noreferrer">Project Manager (PM) Network LinkedIn Group</a></li>
+<li><a href="https://www.linkedin.com/groups/1824657/" target="_blank" rel="noopener noreferrer">Project Management Institute (PMI) LinkedIn Group</a></li>
+<li><a href="https://www.linkedin.com/groups/3915051/" target="_blank" rel="noopener noreferrer">PMO Global Alliance LinkedIn Group</a></li>
 </ul>
 </li>
-<li>You can also interact through <a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/project-management/issues">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
-<li>
-<p>Join our Discord server (for discussions around this and other curricula): </p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/KHqAv4Nvm5"><img alt="discord link" src="/assets/discord.png" /></a></p>
-</li>
+<li>You can also interact through <a href="https://github.com/hocbigg/project-management/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
 </ul>
-<h1 id="curriculum">Curriculum</h1>
-<ul>
-<li><a href="#foundations-of-project-management">Foundations of Project Management</a></li>
-<li><a href="#project-initiation--definition">Project Initiation &amp; Definition</a></li>
-<li><a href="#project-planning--baselines">Project Planning &amp; Baselines</a></li>
-<li><a href="#risk-quality-and-procurement">Risk, Quality, and Procurement</a></li>
-<li><a href="#execution-monitoring--control">Execution, Monitoring &amp; Control</a></li>
-<li><a href="#project-closure--organizational-learning">Project Closure &amp; Organizational Learning</a></li>
-<li><a href="#human--communication-dimensions">Human &amp; Communication Dimensions</a></li>
-</ul>
-<h2 id="foundations-of-project-management">Foundations of Project Management</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>What Is a Project? + Project Management Principles</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/kickoff">PMI Kickoff – Project Management Fundamentals (free)</a> + <a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/standards/pmbok">PMBOK Guide – Seventh Edition overview (PMI member free PDF)</a></td>
-</tr>
-<tr>
-<td>Project Roles, Constraints, Success Criteria &amp; Lifecycle</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/standards/pmbok">PMBOK Guide – Principles &amp; Project Lifecycle</a></td>
-</tr>
-<tr>
-<td>Introduction to Predictive, Agile, and Hybrid Approaches</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/professional-certificates/google-project-management">Google Project Management Certificate – Foundations (free to audit on Coursera)</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="project-initiation-definition">Project Initiation &amp; Definition</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Business Case, Project Selection &amp; Charter</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/standards/pmbok">PMBOK Guide – Project Initiation &amp; Business Case</a></td>
-</tr>
-<tr>
-<td>Stakeholder Identification &amp; Analysis</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/learning/library/stakeholder-management-plan-6090">PMI Stakeholder Engagement Fundamentals</a></td>
-</tr>
-<tr>
-<td>Requirements &amp; Scope Definition</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/standards/pmbok">PMBOK Guide – Scope Management</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="project-planning-baselines">Project Planning &amp; Baselines</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Work Breakdown Structures (WBS)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/standards/pmbok">PMBOK Guide – Scope Baseline &amp; WBS</a> + <a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/professional-certificates/google-project-management">Google Project Management – Planning module (free to audit)</a></td>
-</tr>
-<tr>
-<td>Scheduling &amp; Critical Path Method</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/standards/pmbok">PMBOK Guide – Schedule Management</a></td>
-</tr>
-<tr>
-<td>Cost Estimation &amp; Budgeting</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/standards/pmbok">PMBOK Guide – Cost Management</a></td>
-</tr>
-<tr>
-<td>Resource Planning</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/standards/pmbok">PMBOK Guide – Resource Management</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="risk-quality-and-procurement">Risk, Quality, and Procurement</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Risk Identification &amp; Qualitative Analysis</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/standards/pmbok">PMBOK Guide – Risk Management</a></td>
-</tr>
-<tr>
-<td>Quality Planning &amp; Management</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/standards/pmbok">PMBOK Guide – Quality Management</a></td>
-</tr>
-<tr>
-<td>Procurement Basics &amp; Contract Types</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/standards/pmbok">PMBOK Guide – Procurement Management</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="execution-monitoring-control">Execution, Monitoring &amp; Control</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Performance Measurement &amp; Earned Value Basics</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/standards/pmbok">PMBOK Guide – Monitoring &amp; Controlling</a></td>
-</tr>
-<tr>
-<td>Change Control Systems</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/standards/pmbok">PMBOK Guide – Integrated Change Control</a></td>
-</tr>
-<tr>
-<td>Reporting, Dashboards &amp; Issue Management</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/professional-certificates/google-project-management">Google Project Management – Execution &amp; Control modules (free to audit)</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="project-closure-organizational-learning">Project Closure &amp; Organizational Learning</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Formal Project Closure &amp; Lessons Learned</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/standards/pmbok">PMBOK Guide – Project Closure</a></td>
-</tr>
-<tr>
-<td>Benefits Realization</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/standards/pmbok">PMBOK Guide – Value Delivery &amp; Outcomes</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="human-communication-dimensions">Human &amp; Communication Dimensions</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Team Formation, Leadership &amp; Motivation</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/professional-certificates/google-project-management">Google Project Management – Team Leadership module (free to audit)</a></td>
-</tr>
-<tr>
-<td>Communication Planning &amp; Management</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/learning/library/effective-communication-better-project-management-6480">PMI Communications Fundamentals</a></td>
-</tr>
-<tr>
-<td>Conflict Resolution &amp; Negotiation</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/gettingtoyesnego0000fish_z1w8">Getting to Yes</a> (Archive.org)</td>
-</tr>
-<tr>
-<td>Ethics &amp; Professional Responsibility</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.pmi.org/about/ethics/code">PMI Code of Ethics (free)</a></td>
-</tr>
-</tbody>
-</table>
-<h1 id="code-of-conduct">Code of conduct</h1>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/code-of-conduct">Hocbigg's code of conduct</a>.</p>
-</article>
-</main>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="foundations-of-project-management">Foundations of Project Management</h3>
+<p>Introduces core concepts of projects, project lifecycle models, organizational governance structures, and the distinct characteristics of predictive, agile, and hybrid delivery methods.</p>
+<p><a href="https://books.google.com/books?isbn=9781260238860" target="_blank" rel="noopener noreferrer">Project Management: The Managerial Process (Erik W. Larson &amp; Clifford F. Gray)</a> - The canonical undergraduate textbook providing a balanced socio-technical view of project selection, organizational strategy, and delivery life cycles.</p>
+<p><a href="https://opentextbc.ca/projectmanagement/" target="_blank" rel="noopener noreferrer">Project Management (Adrienne Watt / BCcampus)</a> - A comprehensive, peer-reviewed open textbook covering fundamental concepts and lifecycle models, serving as a free alternative to Larson &amp; Gray.</p>
+<p><a href="https://www.coursera.org/learn/project-management-foundations" target="_blank" rel="noopener noreferrer">Foundations of Project Management (Google / Coursera)</a> - A practical, entry-level online course covering the project manager role, project phases, and operational frameworks, freely accessible in audit mode.</p>
+<p><a href="https://www.edx.org/course/introduction-to-project-management" target="_blank" rel="noopener noreferrer">Introduction to Project Management (AdelaideX / edX)</a> - An alternative university-level introductory MOOC covering the fundamentals of project lifecycles and delivery contexts, freely accessible in audit mode.</p>
+<h3 id="project-initiation-and-scope-definition">Project Initiation and Scope Definition</h3>
+<p>Covers strategic project selection, business case development, stakeholder identification and analysis, requirements elicitation, and establishing formal project boundaries through the project charter.</p>
+<p><a href="https://books.google.com/books?isbn=9781260238860" target="_blank" rel="noopener noreferrer">Project Management: The Managerial Process (Erik W. Larson &amp; Clifford F. Gray)</a> - Core reading on strategic alignment, project screening criteria, charter formulation, and scope checklists to prevent project drift.</p>
+<p><a href="https://www.coursera.org/learn/project-initiation-google" target="_blank" rel="noopener noreferrer">Project Initiation: Starting a Successful Project (Google / Coursera)</a> - An applied course walking through the creation of measurable project charters, stakeholder analysis matrices, RACI charts, and scope boundaries, freely accessible in audit mode.</p>
+<p><a href="https://opentextbc.ca/projectmanagement/" target="_blank" rel="noopener noreferrer">Project Management (Adrienne Watt / BCcampus)</a> - A free open textbook providing practical guidance and templates for stakeholder mapping, business requirements definition, and initiation approvals.</p>
+<h3 id="project-planning-scheduling-and-baselines">Project Planning, Scheduling, and Baselines</h3>
+<p>Explores Work Breakdown Structures, activity sequencing, Critical Path Method network analysis, schedule baselines, cost estimation techniques, and resource leveling.</p>
+<p><a href="https://books.google.com/books?isbn=9781260238860" target="_blank" rel="noopener noreferrer">Project Management: The Managerial Process (Erik W. Larson &amp; Clifford F. Gray)</a> - Definitive text detailing top-down and bottom-up cost estimation, CPM and PERT network scheduling, and resource-constrained leveling.</p>
+<p><a href="https://www.coursera.org/learn/project-planning-google" target="_blank" rel="noopener noreferrer">Project Planning: Putting It All Together (Google / Coursera)</a> - An applied video-based course focusing on schedule creation, milestone mapping, budgeting, and planning artifact documentation, freely accessible in audit mode.</p>
+<p><a href="https://ocw.mit.edu/courses/1-040-project-management-spring-2009/" target="_blank" rel="noopener noreferrer">Project Management (MIT OpenCourseWare)</a> - Undergraduate course materials providing lecture notes, quantitative problems, and case studies on network diagrams, scheduling mathematics, and cost baselining.</p>
+<p><a href="https://opentextbc.ca/projectmanagement/" target="_blank" rel="noopener noreferrer">Project Management (Adrienne Watt / BCcampus)</a> - Open-access chapters detailing Work Breakdown Structure hierarchy, critical path calculation, and budget allocation methods.</p>
+<h3 id="project-risk-quality-and-procurement">Project Risk, Quality, and Procurement</h3>
+<p>Examines qualitative and quantitative risk analysis, risk response strategies, quality planning and control standards, and procurement contract types alongside vendor management.</p>
+<p><a href="https://books.google.com/books?isbn=9781260238860" target="_blank" rel="noopener noreferrer">Project Management: The Managerial Process (Erik W. Larson &amp; Clifford F. Gray)</a> - Core text covering risk identification matrices, contingency reserve allocation, and outsourcing management.</p>
+<p><a href="https://books.google.com/books?isbn=9781119803836" target="_blank" rel="noopener noreferrer">Project Management: A Managerial Approach (Jack R. Meredith, Samuel J. Mantel Jr. &amp; Scott M. Shafer)</a> - A comprehensive alternative textbook providing deeper coverage of quality control systems, contract structures, and vendor negotiation.</p>
+<p><a href="https://opentextbc.ca/projectmanagement/" target="_blank" rel="noopener noreferrer">Project Management (Adrienne Watt / BCcampus)</a> - A free open-access guide detailing practical risk response strategies, quality metrics, and procurement planning workflows.</p>
+<h3 id="project-execution-monitoring-and-control">Project Execution, Monitoring, and Control</h3>
+<p>Focuses on tracking project performance using Earned Value Management, administering integrated change control, reporting status via dashboards, and running iterative iterations via Agile and Kanban frameworks.</p>
+<p><a href="https://books.google.com/books?isbn=9781260238860" target="_blank" rel="noopener noreferrer">Project Management: The Managerial Process (Erik W. Larson &amp; Clifford F. Gray)</a> - Canonical guide to Earned Value Management (EVM), schedule and cost variance calculations, performance indexing, and formal change control.</p>
+<p><a href="https://www.coursera.org/learn/project-execution-google" target="_blank" rel="noopener noreferrer">Project Execution: Running the Project (Google / Coursera)</a> - Practical training on day-to-day progress tracking, managing scope changes, tracking issues, and building project status dashboards, freely accessible in audit mode.</p>
+<p><a href="https://www.coursera.org/learn/agile-project-management" target="_blank" rel="noopener noreferrer">Agile Project Management (Google / Coursera)</a> - Builds directly on traditional control methods by teaching adaptive execution, Scrum roles and ceremonies, backlog refinement, and Kanban flow management, freely accessible in audit mode.</p>
+<h3 id="project-closure-and-organizational-learning">Project Closure and Organizational Learning</h3>
+<p>Details administrative closeout, deliverable handover, formal customer acceptance, post-implementation retrospectives, lessons learned documentation, and long-term benefits realization.</p>
+<p><a href="https://books.google.com/books?isbn=9781260238860" target="_blank" rel="noopener noreferrer">Project Management: The Managerial Process (Erik W. Larson &amp; Clifford F. Gray)</a> - Essential reading on final deliverable acceptance, post-project audit methodology, team performance evaluations, and knowledge transfer.</p>
+<p><a href="https://books.google.com/books?isbn=9781119803836" target="_blank" rel="noopener noreferrer">Project Management: A Managerial Approach (Jack R. Meredith, Samuel J. Mantel Jr. &amp; Scott M. Shafer)</a> - An alternative text offering detailed frameworks for project termination decisions, contractual closeout, and organizational learning.</p>
+<p><a href="https://opentextbc.ca/projectmanagement/" target="_blank" rel="noopener noreferrer">Project Management (Adrienne Watt / BCcampus)</a> - A concise open-access overview of administrative closeout procedures, transition planning, and project post-mortem templates.</p>
+<h3 id="project-leadership-communication-and-team-dynamics">Project Leadership, Communication, and Team Dynamics</h3>
+<p>Develops interpersonal leadership capabilities, team motivation and conflict resolution models, stakeholder communication planning, principled negotiation, and professional ethics.</p>
+<p><a href="https://www.coursera.org/learn/project-management-basics" target="_blank" rel="noopener noreferrer">Project Management: The Basics for Success (UC Irvine / Coursera)</a> - A practical course combining situational team leadership models, communication channels, and team motivation mechanics, freely accessible in audit mode.</p>
+<p><a href="https://archive.org/details/gettingtoyesnego0000fish_z1w8" target="_blank" rel="noopener noreferrer">Getting to Yes: Negotiating Agreement Without Giving In (Roger Fisher, William Ury &amp; Bruce Patton)</a> - The foundational, freely readable open-library text on principled, interest-based negotiation and conflict management with project stakeholders.</p>
+<p><a href="https://books.google.com/books?isbn=9781260238860" target="_blank" rel="noopener noreferrer">Project Management: The Managerial Process (Erik W. Larson &amp; Clifford F. Gray)</a> - Core textbook chapters addressing social capital, organizational politics, team development stages, and ethical responsibilities in project leadership.</p>
+    </article>
+  </main>
 
 </body>
 </html>
